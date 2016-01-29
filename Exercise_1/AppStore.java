@@ -16,8 +16,8 @@ public class AppStore {
 	public int getTotalApp() {
 		return totalApp;
 	}
-	public Application getAppList() {
-		return appList[100];
+	public Application[] getAppList() {
+		return appList;
 	}
 	public String toString() {
 		return "There are "+totalApp+" applications ready to install";

@@ -23,14 +23,14 @@ public class SmartPhone {
 		return totalApp;
 	}
 	public int getRemainingSize() {
-		int count = 0;
+		int c = 0;
         int temp = memory;
-        for(int i=1;i<appList.length;i++) {
+        for(int i=0;i<appList.length;i++) {
             if(appList[i]!=null) {
-                count+=appList[i].getappSize();
+                c+=appList[i].getappSize();
             }
         }
-        return temp-=count;
+        return temp-=c;
 	}
 	public String toString () {
 		return "memory size "+memory+", "+totalApp+" application installed, remaining memory size: "+getRemainingSize();

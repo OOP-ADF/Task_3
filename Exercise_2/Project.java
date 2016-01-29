@@ -4,12 +4,14 @@
 
 public class Project {
 	private String projectName;
-	private Member[] teamMember = new Member[5];
+	private Member[] teamMember;
 	private int nTeam = 0;
-	private boolean releaseStatus = false;
+	private boolean releaseStatus;
 	
 	public Project (String projectName) {
 		this.projectName = projectName;
+		teamMember = new Member[5];
+		releaseStatus = false;
 	} 
 	public void addMember(Member m) {
 		teamMember[nTeam] = m;
@@ -24,11 +26,11 @@ public class Project {
 	public String toString() {
         String status;
         if(releaseStatus) {
-            status = "Progress";
+            status = "Released";
         }
         else {
-            status = "Closed";
+            status = "in Progress";
         }
-		return ("Project "+projectName+" status is in "+status+" with team member of "+nTeam);
+		return ("Project "+projectName+" status is "+status+" with team member of "+nTeam);
 	}
 }

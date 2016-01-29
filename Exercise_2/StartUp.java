@@ -5,8 +5,8 @@
 public class StartUp {
 	private Member[] member = new Member[50];
 	private Project[] projectList = new Project[50];
-	private int nMember;
-	private int nProject;
+	private int nMember = 0;
+	private int nProject = 0;
 	
 	public void addMember(Member m) {
 		member[nMember] = m;
