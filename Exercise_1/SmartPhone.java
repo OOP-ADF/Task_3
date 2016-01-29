@@ -4,7 +4,7 @@
 
 public class SmartPhone {
 	private Application[] appList = new Application[10];
-	private int totalApp;
+	private int totalApp = 0;
 	private int memory;
 	
 	public void setMemory(int memory) {
@@ -12,8 +12,8 @@ public class SmartPhone {
 	}
 	public void addApplication(AppStore appStore, int appId) {
 		if(getRemainingSize()>=appStore.getApp(appId).getappSize()) {
-            totalApp++;
             appList[totalApp] = appStore.getApp(appId);
+			totalApp++;
         }
 	}
 	public Application getApp(int id) {
@@ -23,14 +23,14 @@ public class SmartPhone {
 		return totalApp;
 	}
 	public int getRemainingSize() {
-		int temp = 0;
-        int temp2 = memory;
+		int count = 0;
+        int temp = memory;
         for(int i=1;i<appList.length;i++) {
             if(appList[i]!=null) {
-                temp+=appList[i].getappSize();
+                count+=appList[i].getappSize();
             }
         }
-        return temp2-=temp;
+        return temp-=count;
 	}
 	public String toString () {
 		return "memory size "+memory+", "+totalApp+" application installed, remaining memory size: "+getRemainingSize();
