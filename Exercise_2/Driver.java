@@ -47,4 +47,5 @@ public class Driver {
 		}
 		System.out.println("Number of released project: "+movelutionLab.getNumReleasedProject());
 	}
+	
 }
