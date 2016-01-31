@@ -44,4 +44,5 @@ public class SmartPhone{
 	int remain = getRemainingSize();
 	return ("Memory size "+memory+"MB, "+totalApp+" application installed, remaining memory size: "+remain+"MB");
 	}
+	
 }
