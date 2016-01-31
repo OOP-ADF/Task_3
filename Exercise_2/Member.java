@@ -39,4 +39,5 @@ public class Member{
 	public String toString(){
 		return "Member "+name+" specialized in "+specialization+" and already worked on "+projectWorked+" project(s)";
 	}
+	
 }
