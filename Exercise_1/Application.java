@@ -22,4 +22,6 @@ public class Application{
 	public String toString(){
 		return ("Application name: "+appName+", with size: "+appSize+"MB");
 	}
+	
 }
+
