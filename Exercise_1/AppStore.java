@@ -30,4 +30,3 @@ public class AppStore{
 		return "There are "+totalApp+" applications ready to install";
 	}
 }
-
