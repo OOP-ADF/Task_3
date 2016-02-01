@@ -1,4 +1,3 @@
-package task_3_1;
 public class AppStore {
     private Application[] listApp = new Application[100];
     private int totalApp;

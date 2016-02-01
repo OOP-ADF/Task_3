@@ -1,5 +1,3 @@
-
-package task_3_1;
 public class Application {
   private String NamaApp;
   private int SizeApp;

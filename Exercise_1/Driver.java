@@ -1,5 +1,3 @@
-package task_3_1;
-
 public class Driver {
     	public static void main(String[] args) {
  		AppStore aps = new AppStore();

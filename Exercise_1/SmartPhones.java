@@ -1,5 +1,3 @@
-package task_3_1;
-
 public class SmartPhones {
  	private Application[] appList = new Application[10];
  	private int totalApp;
