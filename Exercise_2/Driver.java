@@ -7,19 +7,19 @@ Kelas	: IF-38-09
 public class Driver {
  public static void main(String[] args ) {
   StartUp stp = new StartUp();
-  Member m = new Member("Axl Rose", "Java");
+  Member m = new Member("Andi", "Pascal");
   stp.addMember(m);
   
-  m = new Member("Slash", "Ruby");
+  m = new Member("Eggy", "C++");
   stp.addMember(m);
   
-  m = new Member("Izzy Stradlin", "MySQL");
+  m = new Member("Yahya", "DMC");
   stp.addMember(m);
   
-  m = new Member("McKagan", "C++");
+  m = new Member("Kevin", "AI");
   stp.addMember(m);
   
-  m = new Member("Adler", "Matlab");
+  m = new Member("Tiyo", "C#");
   stp.addMember(m);
   
   stp.createNewProject("Project 1");
