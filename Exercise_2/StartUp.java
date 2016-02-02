@@ -24,6 +24,10 @@ public class StartUp {
 		return member[id];
 	}
 	
+	public Member[] getMemberList() {
+		return member;
+	}
+	
 	public void createNewProject(String projectName) {
 		Project new_project = new Project(projectName);
 		projectList[nProject] = new_project;
@@ -34,8 +38,13 @@ public class StartUp {
 		return projectList[id];
 	}
 	
+	public Project[] getProjectList() {
+		return projectList;
+	}
+	
 	public void setProjectMember(Project p, Member m) {
-		p.addMember(m);		
+		p.addMember(m);
+		m.setProjectWorked(m.getProjectWorked()+1);
 	}
 	
 	public void releaseProject(Project p) {

@@ -28,6 +28,10 @@ public class Member {
 		return projectWorked;
 	}
 	
+	public void setProjectWorked(int value) {
+		projectWorked = value;
+	}
+	
 	public String toString() {
 		return name +" specialized in "+ specialization +" and has already worked on "+ projectWorked +" project(s).";
 	}
