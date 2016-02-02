@@ -2,6 +2,8 @@
 Kelas: IF-38-01
 NIM: 1301140381*/
 
+package Exercise_1;
+
 public class Application {
 	private String appName;
 	private int appSize;

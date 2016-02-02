@@ -2,6 +2,8 @@
 Kelas: IF-38-01
 NIM: 1301140381*/
 
+package Exercise_1;
+
 public class SmartPhone {
 	private Application[] appList;
 	private int totalApp;
