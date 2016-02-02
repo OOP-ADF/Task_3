@@ -26,6 +26,6 @@ public class AppStore {
 	
 	public String toString() {
 		return ("There are " + totalApp +
-		" applications ready to install")
+		" applications ready to install");
 	}
 }
