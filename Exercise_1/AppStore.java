@@ -1,4 +1,3 @@
-
 public class AppStore{
 	private int totalApp;
 	private Application[] appList = new Application[100];
