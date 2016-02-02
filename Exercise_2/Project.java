@@ -38,7 +38,7 @@ public class Project
 		if(isReleased())
 			x = x + "has been released";
 		else
-			x = x + " is in progress";
+			x = x + "in progress";
 		x = x + " with team member of " + nTeam;
 		return x;	
 	}
