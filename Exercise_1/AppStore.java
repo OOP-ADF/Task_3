@@ -1,5 +1,5 @@
-/*
-Name 	: Raja Ryan Pradana
+
+/*Name 	: Raja Ryan Pradana
 NIM  	: 1301140302
 Kelas	: IF-38-02
 */
