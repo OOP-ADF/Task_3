@@ -7,7 +7,8 @@ public class Application {
 	private int appSize;
 	
 	public Application(String appName, int appSize) {
-		
+		this.appName = appName;
+		this.appSize = appSize;
 	}
 	
 	public String getAppName() {
@@ -19,6 +20,6 @@ public class Application {
 	}
 	
 	public String toString() {
-		return "Application name: " + appName + ", size: " + appSize + "MB";
+		return "Application name: " + getAppName() + ", size: " + getAppSize() + "MB";
 	}
 }

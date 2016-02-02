@@ -4,10 +4,11 @@ NIM: 1301140381*/
 
 public class AppStore {
 	private Application[] appList;
-	private int totalApp = 0; // redundant?
+	private int totalApp; // redundant?
 	
 	public AppStore() {
 		appList = new Application[100];
+		totalApp = 0;
 	}
 	
 	public void createNewApp(String appName, int appSize) {
@@ -16,6 +17,7 @@ public class AppStore {
 	}
 	
 	public int getTotalApp() {
+		totalApp = 0;
 		for(Application app: appList) {
 			if(app != null)
 				totalApp++;
