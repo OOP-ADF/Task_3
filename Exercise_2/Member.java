@@ -1,5 +1,5 @@
 /*Nama	: Windy Israniati Jihan
-NIM		: 1301144309
+NIM	: 1301144309
 Kelas	: IF-38-09 */
 
 public class Member {
