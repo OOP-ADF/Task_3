@@ -30,4 +30,3 @@ public class Project{
 			return ("Project "+projectName+" status is in progress with team member of "+nTeam);
 	}	
 } 
-} 
