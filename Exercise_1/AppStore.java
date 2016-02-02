@@ -1,4 +1,4 @@
-
+//1103130239,Anisa Nur Arifah,IF-38-01
 public class AppStore{
 	private int totalApp;
 	private Application[] appList = new Application[100];
