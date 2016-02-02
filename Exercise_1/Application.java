@@ -20,6 +20,7 @@ public class Application {
 	}
 	
 	public String toString() {
-		return ("Application: " + appName + ", Size: " + appSize);
+		return ("Application name: " + appName +
+		", with size: " + appSize + "MB");
 	}
 }
