@@ -5,8 +5,8 @@
 */
 
 public class Application {
-	String appName;
-	int appSize;
+	private String appName;
+	private int appSize;
 	
 	public Application(String appName, int appSize){
 		this.appName = appName;
