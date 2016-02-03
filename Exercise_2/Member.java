@@ -8,30 +8,34 @@ public class Member {
 	private int projectWorked = 0;
 	
 	public Member(String name) {
-		
+		this.name = name;
 	}
 	
 	public Member(String name, String specialization) {
-		
+		this.name = name;
+		this.specialization = specialization;
 	}
 	
-	public void setName() {
-		
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public void setSpecialization() {
-		
+	public void setSpecialization(String specialization) {
+		this.specialization = specialization;
 	}
 	
 	public void getName() {
-		
+		return name;
 	}
 	
 	public void getSpecialization() {
-		
+		return specialization;
 	}
 	
 	public String toString() {
-		
+		return ("Member " + name + 
+		" specialized in " + specialization +
+		" Programming and already worked on " + projectWorked +
+		" project(s)");
 	}
 }
