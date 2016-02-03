@@ -31,6 +31,6 @@ public class SmartPhone {
         return (memory-tampung);
     }
     public String toString(){
-        return ("Memory size "+memory+"MB, "+getTotalApp()+" applications installed, remaining memory size: " +getRemainingSize()+"MB");
+        return ("Memory size "+memory+" MB, "+getTotalApp()+" applications installed, remaining memory size: " +getRemainingSize()+" MB");
     }
 }
