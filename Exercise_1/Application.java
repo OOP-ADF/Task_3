@@ -19,6 +19,6 @@ public class Application {
 		return this.appSize;
 	}
 	public String toString(){
-		return "Application bane: "+this.appName+", with size: "+this.appSize;
+		return "Application name: "+this.appName+", with size: "+this.appSize;
 	}
 }
