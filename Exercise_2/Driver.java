@@ -7,7 +7,7 @@ public class Driver{
 		Stp.addMember(m);
 		m = new Member("Agung2","C++");
 		Stp.addMember(m);
-		m = new Member("Agung3","mySQL");
+		m = new Member("Agung3","PHP");
 		Stp.addMember(m);
 		m = new Member("Suhendar","java");
 		Stp.addMember(m);
