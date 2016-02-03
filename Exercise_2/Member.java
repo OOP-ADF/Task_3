@@ -24,12 +24,20 @@ public class Member {
 		this.specialization = specialization;
 	}
 	
-	public void getName() {
+	public void setProjectWorked(int projectWorked) {
+		this.projectWorked = projectWorked;
+	}
+	
+	public String getName() {
 		return name;
 	}
 	
-	public void getSpecialization() {
+	public String getSpecialization() {
 		return specialization;
+	}
+	
+	public String getProjectWorked() {
+		return projectWorked;
 	}
 	
 	public String toString() {
