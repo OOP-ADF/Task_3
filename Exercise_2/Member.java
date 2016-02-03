@@ -36,7 +36,7 @@ public class Member {
 		return specialization;
 	}
 	
-	public String getProjectWorked() {
+	public int getProjectWorked() {
 		return projectWorked;
 	}
 	

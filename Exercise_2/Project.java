@@ -6,10 +6,11 @@ public class Project {
 	private String projectName;
 	private Member[] teamMember = new Member[5];
 	private int nTeam = 0;
-	private boolean releaseStatus = false;
+	private boolean releaseStatus;
 	
 	public Project(String projectName) {
 		this.projectName = projectName;
+		releaseStatus = false;
 	}
 	
 	public void addMember(Member m) {
