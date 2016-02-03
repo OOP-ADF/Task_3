@@ -1,22 +1,30 @@
 //Agung Suhendar_1301140279_IF 38-09
 
-public class Application{
-	private String appName;
-	private int appSize;
-	public Application(String appName, int appSize){
-		this.appName = appName;
-		this.appSize = appSize;
+public class AppStore{
+	private Application[] applist = new Application[100];
+	private int totalApp;
+	
+	public void createNewApp(String appName,int appSize){
+		if (totalApp<100){
+			Application temp = new Application(appName,appSize);
+			applist[totalApp] = temp;
+			totalApp++;
+		}
 	}
 	
-	public String getName(){
-		return appName;
+	public Application getApp(int id){
+		return applist[id];
 	}
 	
-	public int getSize(){
-		return appSize;
+	public int getTotalApp(){
+		return totalApp;
+	}
+	
+	public Application[] getAppList(){
+		return applist;
 	}
 	
 	public String toString(){
-		return "Application name: "+appName+", with size: "+appSize+"MB";
+		return "There are "+totalApp+" applications ready to install";
 	}
 }
