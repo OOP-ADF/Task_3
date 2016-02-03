@@ -9,22 +9,31 @@ public class Project {
 	private boolean releaseStatus = false;
 	
 	public Project(String projectName) {
-		
+		this.projectName = projectName;
 	}
 	
 	public void addMember(Member m) {
-		
+		teamMember[nTeam] = m;
+		nTeam++;
 	}
 	
 	public boolean isReleased() {
-		
+		return releaseStatus;
 	}
 	
 	public void releaseApp() {
-		
+		releaseStatus = true;
 	}
 	
 	public String toString() {
-		
+		String status;
+		if (releaseStatus = true)
+			status = "Released";
+		else
+			status = "in progress"; 
+		return (
+		"Project " + projectName +
+		" status is " + status +
+		" with team member of " + nTeam);
 	}
 }
