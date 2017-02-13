@@ -1,5 +1,5 @@
 package task3exercise1;
-
+//Tugas Hardiyan
 public class SmartPhone{
     // 
     // 1. Declare your private attributes here:
