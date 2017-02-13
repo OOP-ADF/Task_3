@@ -1,5 +1,5 @@
 package task3exercise2;
-
+// Tugas Azahra
 public class Member {
 
     // 1. Declare your private attributes here:
