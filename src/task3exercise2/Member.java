@@ -7,7 +7,9 @@ public class Member {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+        private String name;
+        private String specialization;
+        private int projectWorked = 0;
     //---------------------------------------------------------
     
     // 2. Declare your 2 Constructor here:
@@ -15,10 +17,16 @@ public class Member {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+        public Member(String name) {
+            this.name = name;
+        }
+        
+        public Member(String name, String specialization) {
+            this.name = name;
+            this.specialization = specialization;
+        }
     //---------------------------------------------------------
-    
-    
+        
     // 3. Declare your Setter and Getter method here:
     // NIM : .........................., 
     // NAMA : ........................., 

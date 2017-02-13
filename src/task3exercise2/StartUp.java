@@ -8,7 +8,10 @@ public class StartUp {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+        private Member member;
+        private Project projectList;
+        private int nMember;
+        private int nProject;
     //---------------------------------------------------------
     
     // 2. Declare your Constructor here:
