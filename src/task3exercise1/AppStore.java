@@ -7,7 +7,7 @@ public class AppStore {
     // NAMA : HENDRIK CHRISTIAN JANIFER SIMANJUNTAK 
     //
     //------------------- your code here-----------------------
-        private Application appList[] = new Application[10];
+        private Application appList[] = new Application[100];
         private int totalApp;
     //---------------------------------------------------------
     
@@ -16,9 +16,14 @@ public class AppStore {
     // NAMA : HENDRIK CHRISTIAN JANIFER SIMANJUNTAK 
     //
     //------------------- your code here-----------------------
-        
-    //---------------------------------------------------------
-    
+
+    public Application[] getAppList() {
+        return appList;
+    }
+
+    public int getTotalApp() {
+        return totalApp;
+    }
     
     // 3. Create method createNewApp( appName, appSize ) here:
     // NIM : 1301150021 
@@ -27,7 +32,9 @@ public class AppStore {
     //
     //------------------- your code here-----------------------
         public void createNewApp(String appName, int appSize) {
-      
+            Application app = new Application(appName,appSize);
+            appList[totalApp] = app;
+            totalApp++;
         }
     //---------------------------------------------------------
     
@@ -38,8 +45,8 @@ public class AppStore {
     // returns Application object from array appList with array index = id
     //
     //------------------- your code here-----------------------
-        public getApp(int id) {
-            
+        public Application getApp(int id) {
+            return appList[id];
         }
     //---------------------------------------------------------
         
@@ -53,8 +60,8 @@ public class AppStore {
     // 
     public String toString() {
     //------------------- your code here-----------------------
-        return ("There are "+ getApp(id) + " applications ready to install");
-    
+        String app = ("There are "+ totalApp + " applications ready to install");
+        return app;
     //---------------------------------------------------------
     }
 }
