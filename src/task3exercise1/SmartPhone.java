@@ -52,7 +52,8 @@ public class SmartPhone{
     //
     //------------------- your code here-----------------------
         public int getRemainingSize() {
-            return appSize;
+            int n = memory - appSize;
+            return n;
         }
     //---------------------------------------------------------
         
