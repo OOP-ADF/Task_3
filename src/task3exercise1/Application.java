@@ -7,6 +7,8 @@ public class Application {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
+    private String appName;
+    private int appSize;
     
     //---------------------------------------------------------
     
@@ -17,6 +19,21 @@ public class Application {
     // Constructor initialize application name and size (MB)
     //
     //------------------- your code here-----------------------
+
+    public Application(String appName, int appSize) {
+        this.appName = appName;
+        this.appSize = appSize;
+    }
+
+    public String getAppName() {
+        return appName;
+    }
+
+    public int getAppSize() {
+        return appSize;
+    }
+    
+    
     
     //---------------------------------------------------------
     
@@ -39,6 +56,8 @@ public class Application {
     // example : "Application name: App1, with size: 3MB"
     public String toString() {
     //------------------- your code here-----------------------
+        
+    
         return null;
     
     //---------------------------------------------------------
