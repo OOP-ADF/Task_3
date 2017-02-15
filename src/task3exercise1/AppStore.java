@@ -7,7 +7,9 @@ public class AppStore {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+   private int appList[];
+   private int totalApp;
+  
     //---------------------------------------------------------
     
     // 2. Declare your Setter and Getter method here:
@@ -15,17 +17,34 @@ public class AppStore {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+     public int[] getAppList() {
+        return appList;
+    }
+
+    public void setAppList(int[] appList) {
+        this.appList = appList;
+    }
+
+    public int getTotalApp() {
+        return totalApp;
+    }
+
+    public void setTotalApp(int totalApp) {
+        this.totalApp = totalApp;
+    }
     //---------------------------------------------------------
-    
-    
+
+   
     // 3. Create method createNewApp( appName, appSize ) here:
     // NIM : .........................., 
     // NAMA : ........................., 
     // instantiate new Application object and insert it in array appList
     //
     //------------------- your code here-----------------------
-    
+    public AppStore( String appName,int appSize ){
+         totalApp = 0;
+        
+    }
     //---------------------------------------------------------
     
     
