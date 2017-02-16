@@ -51,7 +51,6 @@ public class Driver {
         System.out.println(sm);
         
         // Try another scenario case on your own
-        
     }
 
 }

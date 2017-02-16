@@ -27,8 +27,6 @@ public class Driver {
         myStartUp.addMember( m );
         m = new Member("Beni");
         myStartUp.addMember( m );
-        ...
-        
         
         // create 2 Project object within the Start Up stp, 
         // with project name = project1 and project2
@@ -42,16 +40,14 @@ public class Driver {
         p.addMember(m); 
         m = myStartUp.getMember( 1 );
         p.addMember(m);
-        ...
-        
+
         // add Beni, Cakra, Deni, and Eric into Project2  
         p = myStartUp.getProject( 1 );
         m = myStartUp.getMember( 1 );
         p.addMember(m); 
         m = myStartUp.getMember( 2 );
         p.addMember(m);
-        ...
-        
+
         // set release one of the project
         p = myStartUp.getProject( 1 );
         myStartUp.releaseProject( p );
@@ -64,7 +60,6 @@ public class Driver {
         // display the status of every project in Start Up myStartUp
         System.out.println( myStartUp.getProject( 0 ) );
         System.out.println( myStartUp.getProject( 1 ) );
-        ...
         
         // display the number of released project in Start Up stp
         System.out.println( ... );

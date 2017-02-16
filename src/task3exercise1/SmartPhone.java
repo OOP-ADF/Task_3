@@ -50,8 +50,8 @@ public class SmartPhone{
     // with array index = appId, an Application can be installed 
     // if Application size is less than remaining memory size
     // 
-    public int addApplication(AppStore appStore, int appId) {
-        
+    public addApplication(AppStore appStore, int appId) {
+       return appId; 
     }
     
     // 
@@ -63,8 +63,8 @@ public class SmartPhone{
     //
     
     public int getRemainingSize() {
-        int n = memory - appSize;
-        return n;
+        int s = memory - appSize;
+        return s;
     }
     
     // 
@@ -79,6 +79,6 @@ public class SmartPhone{
     //            remaining memory size: 60MB"
     //
     public String toString() {
-        return ("memory size " + getMemory() + ", " + getApp() + " applications installed, \nremaining memory size: " + getRemainingSize());
+        return ("memory size " + getMemory() + ", " + getTotalApp() + " applications installed, remaining memory size: " + getRemainingSize());
     }
 }
