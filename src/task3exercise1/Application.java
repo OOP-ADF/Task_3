@@ -44,4 +44,12 @@ public class Application {
     //---------------------------------------------------------
     }
 
+    void setAppName(String appname) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setAppSize(int appsize) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
