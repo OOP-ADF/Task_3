@@ -1,77 +1,46 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package task3exercise2;
-
-/**
- * NIM 1 : ................ 
- * NIM 2 : ................ 
- * NIM 3 : ................
- *
- */
+package exercise2;
+ /** 
+     * NIM 1 : 1301150082
+     * NIM 2 : 1301154320
+     * NIM 3 : 1301154474
+    */
 public class Driver {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // instantiate 1 StartUp object stp
-        StartUp myStartUp = new StartUp();        
-        Member m;
-        Project p;
-        // instantiate 5 new Member objects 
-        // with name = Alex, Beni, Cakra, Deni, and Eric; 
-        // and add them to StartUp stp
-        m = new Member("Alex");
-        myStartUp.addMember( m );
-        m = new Member("Beni");
-        myStartUp.addMember( m );
-        ...
-        
-        
-        // create 2 Project object within the Start Up stp, 
-        // with project name = project1 and project2
-        myStartUp.createNewProject( "project1" );
-        myStartUp.createNewProject( "project2" );
-        
-        // set project member as below
-        // add Alex, Beni, and Deni into Project1        
-        p = myStartUp.getProject( 0 );
-        m = myStartUp.getMember( 0 );
-        p.addMember(m); 
-        m = myStartUp.getMember( 1 );
-        p.addMember(m);
-        ...
-        
-        // add Beni, Cakra, Deni, and Eric into Project2  
-        p = myStartUp.getProject( 1 );
-        m = myStartUp.getMember( 1 );
-        p.addMember(m); 
-        m = myStartUp.getMember( 2 );
-        p.addMember(m);
-        ...
-        
-        // set release one of the project
-        p = myStartUp.getProject( 1 );
-        myStartUp.releaseProject( p );
-        
-        // display the status of every member in Start Up myStartUp
-        System.out.println( myStartUp.getMember( 0 ) );
-        System.out.println( myStartUp.getMember( 1 ) );
-        ...
-        
-        // display the status of every project in Start Up myStartUp
-        System.out.println( myStartUp.getProject( 0 ) );
-        System.out.println( myStartUp.getProject( 1 ) );
-        ...
-        
-        // display the number of released project in Start Up stp
-        System.out.println( ... );
-        
-        // Try another scenario case on your own
-        
+public static void main(String[] args) {
+    StarUp Ganteng = new StarUp();
+    Member a;
+    Project b;
+    // 5 new member object
+    // name = Alex, Alwi, Ipul, Doni, Yogs;
+    // add to StarUp stp
+    a = new Member("Alex");
+    Ganteng.addMember( a );
+    Member m = new Member("Alwi");
+    Ganteng.addMember( a );
+    
+    Ganteng.createNewProject ("project1");
+    Ganteng.createNewProject ("project2");
+    
+    b = Ganteng.getProject(0);
+    a = Ganteng.getMember(0);
+    b.addMember(a);
+    a = Ganteng.getMember (1);
+    b.addMember(a);
+    
+    //add Alwi, Ipul, Doni, Yogs
+    b = Ganteng.getProject (1);
+    a = Ganteng.getMember (1);
+    b.addMember(a);
+    a = Ganteng.getMember(2);
+    b.addMember(m);
+    
+    b = Ganteng.getProject(1);
+    Ganteng.releaseProject(b);
+    
+    System.out.println(Ganteng.getMember(0));
+    System.out.println(Ganteng.getMember(1));
+    
+    System.out.println(Ganteng.getProject(0));
+    System.out.println(Ganteng.getProject(1));
     }
-
+    
 }
