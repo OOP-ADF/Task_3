@@ -3,20 +3,38 @@ package task3exercise1;
 public class SmartPhone{
     // 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154329 
+    // NAMA : ilham nugraha 
     // 
     //------------------- your code here-----------------------
-    
+    private int totalApp; 
+    private int memory;
     //---------------------------------------------------------
 
     
     // 
     // 2. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154329
+    // NAMA : ilham nugraha 
     // 
     //------------------- your code here-----------------------
+
+    public int getTotalApp() {
+        return totalApp;
+    }
+
+    public void setTotalApp(int totalApp) {
+        this.totalApp = totalApp;
+    }
+
+    public int getMemory() {
+        return memory;
+    }
+
+    public void setMemory(int memory) {
+        this.memory = memory;
+    }
+    
     
     //---------------------------------------------------------
 
