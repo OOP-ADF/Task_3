@@ -43,7 +43,7 @@ public class AppStore {
     }
     
     
-    // toString cara sendiri, maafkan pak :(
+    
     
     public String toString(){
         for(int p = 1; p <= 100; p++){
