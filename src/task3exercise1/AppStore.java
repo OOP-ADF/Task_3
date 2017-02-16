@@ -3,8 +3,8 @@ package task3exercise1;
 public class AppStore {
     
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM :1301154217 
+    // NAMA : Ahmad Fathoni Zumaro
     //
     //------------------- your code here-----------------------
    private int appList[];
@@ -13,8 +13,8 @@ public class AppStore {
     //---------------------------------------------------------
     
     // 2. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM :1301154217 
+    // NAMA :Ahmad Fathoni Zumaro
     //
     //------------------- your code here-----------------------
      public int[] getAppList() {
@@ -36,8 +36,8 @@ public class AppStore {
 
    
     // 3. Create method createNewApp( appName, appSize ) here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154217 
+    // NAMA : Ahmad Fathoni Zumaro 
     // instantiate new Application object and insert it in array appList
     //
     //------------------- your code here-----------------------

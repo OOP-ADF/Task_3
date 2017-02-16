@@ -3,8 +3,8 @@ package task3exercise1;
 public class Application {
 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM :1301154217
+    // NAMA : Ahmad Fathoni Zumaro 
     //
     //------------------- your code here-----------------------
    private String appName;
@@ -13,8 +13,8 @@ public class Application {
     //---------------------------------------------------------
     
     // 2. Declare Constructor here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154217
+    // NAMA : Ahmad Fathoni Zumaro
     //
     // Constructor initialize application name and size (MB)
     //
@@ -27,8 +27,8 @@ public class Application {
    
 
     // 3. Declare your Setter and Getter method here:
-    // NIM : ..........................,
-    // NAMA : ........................., 
+    // NIM : 1301154217
+    // NAMA : Ahmad Fathoni Zumaro 
     //
     //------------------- your code here-----------------------
      public String getAppName() {
@@ -49,8 +49,8 @@ public class Application {
     
     //---------------------------------------------------------
     // 4. Create method toString() : String here:
-    // NIM : ..........................,
-    // NAMA : ........................., 
+    // NIM : 1301154217
+    // NAMA : Ahmad Fathoni Zumaro 
     //
     // returns String that contains application name and application size
     // 
