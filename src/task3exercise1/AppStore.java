@@ -7,6 +7,12 @@ public class AppStore {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
+    private Application appList[100];
+    private int totalApp;
+    
+    public int getTotalApp(){
+        return totalApp;
+    }
     
     //---------------------------------------------------------
     
@@ -15,17 +21,25 @@ public class AppStore {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+     public Application[] getAppList() {
+        return appList;
+    }
+
     //---------------------------------------------------------
-    
-    
+
+
     // 3. Create method createNewApp( appName, appSize ) here:
     // NIM : .........................., 
     // NAMA : ........................., 
     // instantiate new Application object and insert it in array appList
     //
     //------------------- your code here-----------------------
-    
+    public createNewApp(string appName, int appSize){
+        Application app = new Application();
+        for(int i = 0; i<totalApp; i++){
+            appList[i] = app;
+        }
+    }
     //---------------------------------------------------------
     
     
@@ -35,7 +49,9 @@ public class AppStore {
     // returns Application object from array appList with array index = id
     //
     //------------------- your code here-----------------------
-    
+    public Application getApp(int id){
+        return appList[id];
+    }
     //---------------------------------------------------------
         
     
@@ -48,7 +64,8 @@ public class AppStore {
     // 
     public String toString() {
     //------------------- your code here-----------------------
-        return null;
+        String msg = "There are "+totalApp+" applications are available"
+        return msg;
     
     //---------------------------------------------------------
     }
