@@ -1,47 +1,38 @@
+    //
+    // NIM : 1301150082, 1301154320, 1301154474 
+    // NAMA : Bagas Adi P. , Alwi Warisman, Serlii R.c.
+    //
+   
 package task3exercise1;
 
 public class Application {
+    private String appName;
+    private int appSize;
+    private int i;
 
-    // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    //------------------- your code here-----------------------
     
-    //---------------------------------------------------------
-    
-    // 2. Declare Constructor here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    // Constructor initialize application name and size (MB)
-    //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-    
-    
-    // 3. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-    
-    
-    // 4. Create method toString() : String here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    // returns String that contains application name and application size 
-    // 
-    // example : "Application name: App1, with size: 3MB"
-    public String toString() {
-    //------------------- your code here-----------------------
-        return null;
-    
-    //---------------------------------------------------------
+    public Application(String appName, int appSize){
+        this.appName = appName;
+        this.appSize = appSize;
+        this.i = 0;
+    }
+    public String getAppName() {
+        return appName;
     }
 
+    public void setAppName(String appName) {
+        this.appName = appName;
+    }
+
+    public int getAppSize() {
+        return appSize;
+    }
+
+    public void setAppSize(int appSize) {
+        this.appSize = appSize;
+    }
+    
+    public String toString(){
+        return "Application Name = " + appName + '\n' + "Application Size = " + appSize + '\n';
+    }
 }
