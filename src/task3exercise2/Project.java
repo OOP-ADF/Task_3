@@ -3,13 +3,13 @@ package task3exercise2;
 
 public class Project {
 
-    Project(String projectName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    private String  projectName;
+	  private Member[] teamMember = new Member[5];
+	  private int nTeam = 0;
+	  private boolean releaseStatus = false;
+    // NIM : 1301154180
+    // NAMA : Rifky Maulana 
     //
     // Constructor initialize project name, 
     // instantiate array member with size of [5],
@@ -29,8 +29,8 @@ public class Project {
     
     
     // 3. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154180
+    // NAMA : Rifky Maulana 
     //
     //------------------- your code here-----------------------
     
@@ -38,31 +38,37 @@ public class Project {
     
     
     // 4. Declare method addMember( m : Member ) here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154180
+    // NAMA : Rifky Maulana 
     //
     // add an object Member m into array team member, then
     // increment integer nTeam+1
     //
     //------------------- your code here-----------------------
-    
+    public void addMember (Member m) {
+  		teamMember[nTeam]= m;
+		nTeam++;
+		m.setProjectWorked(m.getProjectWorked()+1);
+	}
     //---------------------------------------------------------
     
     
     // 5. Declare method releaseApp() here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154180
+    // NAMA : Rifky Maulana 
     //
     // set release status = true
     //
     //------------------- your code here-----------------------
-    
+    public boolean releaseApp() {
+		releaseStatus = true;
+	}
     //---------------------------------------------------------
     
     
     // 6. Create method toString() : String here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154180
+    // NAMA : Rifky Maulana 
     //
     // returns String that contains Project name, number of team member, 
     // and release status 
@@ -71,20 +77,14 @@ public class Project {
     //
     public String toString() {
     //------------------- your code here-----------------------
-        return null;
+        String temp= "";
+		if (releaseStatus==true) {
+			temp="Project "+projectName+ " status is complete with team member of "+nTeam;
+		}
+		else {
+			temp="Project "+projectName+ " status is in progress with team member of "+nTeam;
+		}
+		return temp;
     
     //---------------------------------------------------------
     }
-
-    void addMember(Member m) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void releaseApp() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    boolean isRelease() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-}
