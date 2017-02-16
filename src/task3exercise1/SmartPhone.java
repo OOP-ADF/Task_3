@@ -9,9 +9,10 @@ public class SmartPhone{
     //------------------- your code here-----------------------
     
     //---------------------------------------------------------
-    private Application appList[10];
+    private Application[] appList = new Application[100];
     private int totalApp;
     private int memory;
+
     
     // 
     // 2. Declare your Setter and Getter method here:
@@ -35,12 +36,14 @@ public class SmartPhone{
     //------------------- your code here-----------------------
     
     //---------------------------------------------------------
-    public addApplication (Appstore appStore, int appId){
-        appStore apps = new appStore();
-        if (appSize < remain){
-            apps.getApp(appId);
-        }
-        
+    public void addApplication (AppStore appStore, int appId){
+        if (appStore.getApp(appId).getAppSize() < getRemainingSize()) {
+            appList[totalApp] = appStore.getApp(appId);
+            totalApp++;
+		}
+		else {
+            System.out.println("Memory is full");
+		}
     }
         
     // 
@@ -53,11 +56,14 @@ public class SmartPhone{
     //------------------- your code here-----------------------
     
     //---------------------------------------------------------
-    public int getRemainingSize(){
-        int remain;
-        memory = remain;
-        remain = remain - appSize;
-        return remain;
+    public int getRemainingSize() {
+	int temp = 0;
+        for (int i = 0; i < appList.length; i++) {
+            if (appList[i] != null) {
+                temp = temp + appList[i].getAppSize();
+            }
+	}
+	return memory - temp;
     }
     
     // 
