@@ -5,9 +5,9 @@ public class Project {
 
     // 1. Declare your private attributes here:
     private String  projectName;
-	private Member[] teamMember = new Member[5];
-	private int nTeam = 0;
-	private boolean releaseStatus = false;
+	  private Member[] teamMember = new Member[5];
+	  private int nTeam = 0;
+	  private boolean releaseStatus = false;
     // NIM : 1301154180
     // NAMA : Rifky Maulana 
     //
@@ -46,7 +46,7 @@ public class Project {
     //
     //------------------- your code here-----------------------
     public void addMember (Member m) {
-		teamMember[nTeam]= m;
+  		teamMember[nTeam]= m;
 		nTeam++;
 		m.setProjectWorked(m.getProjectWorked()+1);
 	}
@@ -60,7 +60,7 @@ public class Project {
     // set release status = true
     //
     //------------------- your code here-----------------------
-    public void releaseApp() {
+    public boolean releaseApp() {
 		releaseStatus = true;
 	}
     //---------------------------------------------------------
@@ -88,4 +88,3 @@ public class Project {
     
     //---------------------------------------------------------
     }
-}
