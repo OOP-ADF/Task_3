@@ -3,6 +3,10 @@ package task3exercise2;
 
 public class Project {
 
+    Project(String projectName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     // 1. Declare your private attributes here:
     // NIM : .........................., 
     // NAMA : ........................., 
@@ -70,5 +74,17 @@ public class Project {
         return null;
     
     //---------------------------------------------------------
+    }
+
+    void addMember(Member m) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void releaseApp() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    boolean isRelease() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
