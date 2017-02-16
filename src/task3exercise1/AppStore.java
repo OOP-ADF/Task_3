@@ -1,13 +1,13 @@
 package task3exercise1;
 
-public class AppStore {
+public class AppStore implements Application {
     
     // 1. Declare your private attributes here:
     // NIM : .........................., 
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+    private appList [] Application;
     //---------------------------------------------------------
     
     // 2. Declare your Setter and Getter method here:
