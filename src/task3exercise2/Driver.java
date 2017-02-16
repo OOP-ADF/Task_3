@@ -6,9 +6,9 @@
 package task3exercise2;
 // Tugas Hardiyan
 /**
- * NIM 1 : 1301154124 
- * NIM 2 : 1301154138 
- * NIM 3 : 1301154460
+ * NIM 1 : 1301154124 (M. Rakha)(IF3912)
+ * NIM 2 : 1301154138 (Hardiyan Ichsan G)(IF3912)
+ * NIM 3 : 1301154460 (Azahra Kartika)(IF3912)
  *
  */
 public class Driver {
