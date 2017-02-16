@@ -36,7 +36,7 @@ public class AppStore {
     }
         
     public String toString() {
-        for (int i = 1; i <= 100; 1++){
+        for (int i = 1; i <= 100; i++){
             if (appList[i] != null){
                 String nama = "App Name "+i+": "+appList[i].getAppName();
                 String size = "App Size "+i+": "+appList[i].getAppSize();
