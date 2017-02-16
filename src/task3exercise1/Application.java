@@ -18,7 +18,9 @@ public class Application {
     // Constructor initialize application name and size (MB)
     //
     //------------------- your code here-----------------------
-    public Application (String appName, int appSize){
+    public Application (){
+        this.appName = appName;
+        this.appSize = appSize;
         
     }
 
