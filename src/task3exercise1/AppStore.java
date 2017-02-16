@@ -9,15 +9,17 @@ public class AppStore {
     private int totalApp;
     private int a;
     
-    public createNewApp(String appName, int appSize){
+    public void createNewApp(String appName, int appSize){
         Application newApp = new Application(appName, appSize);
-        for (int a = 1; a<appList.length; a++){
-            if (appList[a] == null){
-                appList[a] = newApp;
-                this.totalApp = a;
-                break;
-            }
-        }
+        appList [totalApp] = newApp;
+        totalApp++;
+        //for (int a = 1; a<appList.length; a++){
+        //    if (appList[a] == null){
+        //        appList[a] = newApp;
+        //        this.totalApp = a;
+        //        break;
+        //    }
+       // }
     }
     
     public Application getApp(int id){

@@ -118,7 +118,7 @@ public class StartUp {
         {
             if (projectList[i] != null)
             {
-                if (projectList[i].isRelease()==true)
+                if (projectList[i].isReleaseStatus()==true)
                 {
                     count++;
                 }

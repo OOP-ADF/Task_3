@@ -77,8 +77,16 @@ public class Project {
     //
     //------------------- your code here-----------------------
     public void addMember(Member a) {
-        teamMember[nTeam] = a;
-        nTeam++;
+        //teamMember[nTeam] = a;
+        //nTeam++;
+        if (nTeam <= teamMember.length) {
+            teamMember[nTeam] = a;
+            nTeam++;            
+            a.setProjectWorked(a.getProjectWorked()+1);
+       }
+       else {
+            System.out.println("Team full");
+        }
     }
     //---------------------------------------------------------
     
@@ -109,11 +117,11 @@ public class Project {
     public String toString() {
     //------------------- your code here-----------------------
     if(releaseStatus == true){
-        return("project " + projectName+"Status is in released with team member of "+nTeam);
+        return(projectName + " Status is in released with team member of "+nTeam);
     }
     else
     {
-        return("project "+projectName+"Status is in progres with team member of "+nTeam);
+        return(projectName + " Status is in progres with team member of "+nTeam);
     }
         
     

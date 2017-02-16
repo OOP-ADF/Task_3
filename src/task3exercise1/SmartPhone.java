@@ -48,8 +48,8 @@ public class SmartPhone{
     // 
     public void addApplication(AppStore appStore, int appId)
     {
-        if (appStore.getApp[appId].getAppSize() < getRemainingSize()){
-            appList[totalApp] = appStore.getApp[appId];
+        if (appStore.getApp(appId).getAppSize() < getRemainingSize()){
+            appList[totalApp] = appStore.getApp(appId);
             totalApp++;
         }
         else
@@ -68,9 +68,18 @@ public class SmartPhone{
     //
     public int getRemainingSize()
     {
-        return memory - (totalApp * Application.appSize);
+        int temp = 0;
+        for (int i = 0; i< appList.length; i++)
+        {
+            if (appList[i] != null)
+            {
+                temp = temp + appList[i].getAppSize();
+            }
+        }
+        return memory - temp;
     }
-    public Application getAppList(int id)
+    
+    public Application getApp(int id)
     {
         return appList[id];
     }
