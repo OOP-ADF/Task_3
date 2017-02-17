@@ -4,16 +4,16 @@ package task3exercise2;
 public class StartUp {
 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih 
     //
     //------------------- your code here-----------------------
     
     //---------------------------------------------------------
     
     // 2. Declare your Constructor here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih  
     //
     //------------------- your code here-----------------------
     
@@ -21,8 +21,8 @@ public class StartUp {
     
     
     // 3. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih  
     //
     //------------------- your code here-----------------------
     
@@ -30,8 +30,8 @@ public class StartUp {
     
     
     // 4. Declare method addMember( m : Member ) here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih  
     //
     // add an object Member m into array member, then
     // increment integer nMember+1
@@ -42,8 +42,8 @@ public class StartUp {
     
     
     // 5. Declare method getMember( id : int ) : Member here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih  
     //
     // returns Member object from array member with array index = id
     //
@@ -53,8 +53,8 @@ public class StartUp {
     
     
     // 6. Declare method createNewProject( projectName : String ) here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih  
     //
     // instantiate new Project object and insert it in array projectList, then
     // increment integer nProject+1
@@ -65,8 +65,8 @@ public class StartUp {
     
     
     // 7. Declare method getProject( id : int ) : Project here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih  
     //
     // returns Project object from array projectList with array index = id
     //
@@ -76,8 +76,8 @@ public class StartUp {
     
     
     // 8. Declare method releaseProject( p : Project ) here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih  
     //
     // set release status of object Project p by invoking method releaseApp()
     //
@@ -87,8 +87,8 @@ public class StartUp {
     
     
     // 9. Declare method getNumReleasedProject() : int here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154558 
+    // NAMA : Diah Ajeng Dwi Yuniasih  
     //
     // returns number of project with status is released
     //

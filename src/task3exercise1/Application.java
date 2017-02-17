@@ -24,11 +24,8 @@ public class Application {
         this.appName = appName;
         this.appSize = appSize;
     }
-    public String getAppName() {
-        
-    
+    public String getAppName() {    
         return appName;
-    
     }    
 
     public void setAppName(String appName) {
