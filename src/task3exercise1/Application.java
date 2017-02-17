@@ -3,8 +3,8 @@ package task3exercise1;
 public class Application {
 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : Faza Ahda 
+    // NAMA : 1301154292
     //
     //------------------- your code here-----------------------
     private String appName;
