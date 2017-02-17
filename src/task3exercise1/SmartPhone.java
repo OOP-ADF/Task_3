@@ -1,20 +1,24 @@
 package task3exercise1;
 
 public class SmartPhone{
+    private String name; 
+    private Application[] appListS = new Application[10];
+    private int totalApp;
+    private int memory;
+    // NIM : M. Anugrah A 
+    // NAMA : 1301154348
     // 
-    // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // 
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
+    public SmartPhone(String name, int memory)
+    {
+        this.name = name;
+        this.memory = memory;
+    }
 
     
     // 
     // 2. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    //NIM : M. Anugrah A 
+    // NAMA : 1301154348 
     // 
     //------------------- your code here-----------------------
     
@@ -29,28 +33,57 @@ public class SmartPhone{
     // get an Application object from array appList of an appStore 
     // with array index = appId, an Application can be installed 
     // if Application size is less than remaining memory size
-    // 
-    //------------------- your code here-----------------------
+  public void setMemory(int memory) {
+        this.memory = memory;
+    }
     
-    //---------------------------------------------------------
+    public void addApplication(AppStore appStore, int appId){
+      for(int i = 0; i < 100; i++){
+            if(appStore.getApp(i) == appStore.getApp(appId)){
+                for(int a = 0; a < 10; a++){
+                    if(appListS[a] == null){
+                        appListS[a] = appStore.getApp(appId);
+                        this.totalApp = a;
+                    }
+                }
+            }
+            else{
+                System.out.println("Apps not found!");
+                break;
+        }
+        }
+      
+      appListS[appId] =  appStore.getApp(appId);
+        this.memory = this.memory - appStore.getApp(appId).getAppSize();
+        totalApp++;
+    }
+    
+    public Application getApp(int id){
+        return appListS[id];
+    }
+       
+    public int getTotalApp(){
+        return totalApp;
+    }
+    
     
         
     // 
     // 4. method method getRemainingSize() : integer here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : M. Anugrah A 
+    // NAMA : 1301154348 
     //
     // returns the remaining memory size of the smart phone
     //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
+  public int getRemainingSize(){
+        return memory;
+  }
         
     
     // 
     // 5. Create method toString() : String here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : M. Anugrah A 
+    // NAMA : 1301154348 
     // 
     // returns String that contains the smart phone total memory size, 
     // number of application installed, and remaining memory size 
@@ -59,8 +92,8 @@ public class SmartPhone{
     //            remaining memory size: 60MB"
     //
     public String toString() {
-    //------------------- your code here-----------------------
-        return null;
+        return "This Smartphone has" + totalApp + " of total app and " + getRemainingSize() + " MB of memory";
+    
     
     //---------------------------------------------------------
     }

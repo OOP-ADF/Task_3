@@ -4,15 +4,74 @@ package task3exercise2;
 public class Project {
 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154530 
+    // NAMA : Nurul Evawani 
     //
     // Constructor initialize project name, 
     // instantiate array member with size of [5],
     // and set release status = false
     //
     //------------------- your code here-----------------------
+    private String projectName;
+    private Member[] teamMember = new Member[5];
+    private int nTeam = 0;
+    private boolean releaseStatus = false;
+
+    public Project(String projectName) {
+        this.projectName = projectName;
+    }
+
+    public String getProjectName() {
+        return projectName;
+    }
+
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
+    }
+
+    public Member[] getTeamMember() {
+        return teamMember;
+    }
+
+    public void setTeamMember(Member[] teamMember) {
+        this.teamMember = teamMember;
+    }
+
+    public int getnTeam() {
+        return nTeam;
+    }
+
+    public void setnTeam(int nTeam) {
+        this.nTeam = nTeam;
+    }
+
+    public boolean isReleaseStatus() {
+        return releaseStatus;
+    }
+
+    public void setReleaseStatus(boolean releaseStatus) {
+        this.releaseStatus = releaseStatus;
+    }
     
+    public void addMember(Member m) {
+        nTeam++;
+        teamMember[nTeam]= m;
+    }
+    
+    public void releaseApp () {
+        releaseStatus = true;
+    }
+    
+    public String toString () {
+        String kalimat;
+        if (releaseStatus == false ) {
+            kalimat = "on progress";
+        }
+        else {
+            kalimat = "complete";
+        }
+    return "Project "+projectName+" status is "+kalimat+ "with team member of"+nTeam;
+    }
     //---------------------------------------------------------
     
     // 2. Declare your Constructor here:
