@@ -46,19 +46,7 @@ public class SmartPhone{
     // with array index = appId, an Application can be installed 
     // if Application size is less than remaining memory size
     // 
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-    
-        
-    // 
-    // 4. method method getRemainingSize() : integer here:
-    // NIM : 1301154306
-    // NAMA : M.Widadio Ilham
-    //
-    // returns the remaining memory size of the smart phone
-    //
-    public void addApplication(AppStore appStore, int appId)
+   public void addApplication(AppStore appStore, int appId)
      {
          if (appStore.getApp(appId).getAppSize() < getRemainingSize()){
              appList[totalApp] = appStore.getApp(appId);
@@ -69,6 +57,32 @@ public class SmartPhone{
              System.out.println("Memory is full");
          }
      }
+    
+        
+    // 
+    // 4. method method getRemainingSize() : integer here:
+    // NIM : 1301154306
+    // NAMA : M.Widadio Ilham
+    //
+    // returns the remaining memory size of the smart phone
+    //
+    public int getRemainingSize()
+    {
+        int temp = 0;
+        for (int i = 0; i< appList.length; i++)
+        {
+            if (appList[i] != null)
+            {
+                temp = temp + appList[i].getAppSize();
+            }
+        }
+        return memory - temp;
+    }
+    
+    public Application getApp(int id)
+    {
+        return appList[id];
+}
         
     
     // 
@@ -83,10 +97,6 @@ public class SmartPhone{
     //            remaining memory size: 60MB"
     //
     public String toString() {
-    return null;
          return ("Memory Size " + memory + "MB, " + getTotalApp() + " aplication installed, remaining memory size : " + getRemainingSize() + "MB");
-        return null;
-    
-    //---------------------------------------------------------
     }
 }
