@@ -1,21 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package task3exercise2;
 
 /**
- * NIM 1 : ................ 
- * NIM 2 : ................ 
- * NIM 3 : ................
- *
+ * NIM 1 : 1301150012 
+ * NIM 2 : 1301154222
+ * NIM 3 : 1301154278
  */
 public class Driver {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // instantiate 1 StartUp object stp
         StartUp myStartUp = new StartUp();        
@@ -28,7 +19,7 @@ public class Driver {
         myStartUp.addMember( m );
         m = new Member("Beni");
         myStartUp.addMember( m );
-        ...
+        //...
         
         
         // create 2 Project object within the Start Up stp, 
@@ -43,7 +34,7 @@ public class Driver {
         p.addMember(m); 
         m = myStartUp.getMember( 1 );
         p.addMember(m);
-        ...
+        //...
         
         // add Beni, Cakra, Deni, and Eric into Project2  
         p = myStartUp.getProject( 1 );
@@ -51,7 +42,7 @@ public class Driver {
         p.addMember(m); 
         m = myStartUp.getMember( 2 );
         p.addMember(m);
-        ...
+        //...
         
         // set release one of the project
         p = myStartUp.getProject( 1 );
@@ -60,15 +51,15 @@ public class Driver {
         // display the status of every member in Start Up myStartUp
         System.out.println( myStartUp.getMember( 0 ) );
         System.out.println( myStartUp.getMember( 1 ) );
-        ...
+        //...
         
         // display the status of every project in Start Up myStartUp
         System.out.println( myStartUp.getProject( 0 ) );
         System.out.println( myStartUp.getProject( 1 ) );
-        ...
+        //...
         
         // display the number of released project in Start Up stp
-        System.out.println( ... );
+        //System.out.println( ... );
         
         // Try another scenario case on your own
         
