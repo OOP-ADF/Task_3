@@ -6,9 +6,9 @@
 package task3exercise2;
 
 /**
- * NIM 1 : ................ 
- * NIM 2 : ................ 
- * NIM 3 : ................
+ * NIM 1 : 1301154166 
+ * NIM 2 : 1301150432 
+ * NIM 3 : 1301154306
  *
  */
 public class Driver {
@@ -27,8 +27,7 @@ public class Driver {
         m = new Member("Alex");
         myStartUp.addMember( m );
         m = new Member("Beni");
-        myStartUp.addMember( m );
-        ...
+        myStartUp.addMember( m );        
         
         
         // create 2 Project object within the Start Up stp, 
@@ -43,7 +42,6 @@ public class Driver {
         p.addMember(m); 
         m = myStartUp.getMember( 1 );
         p.addMember(m);
-        ...
         
         // add Beni, Cakra, Deni, and Eric into Project2  
         p = myStartUp.getProject( 1 );
@@ -51,7 +49,6 @@ public class Driver {
         p.addMember(m); 
         m = myStartUp.getMember( 2 );
         p.addMember(m);
-        ...
         
         // set release one of the project
         p = myStartUp.getProject( 1 );
@@ -60,15 +57,13 @@ public class Driver {
         // display the status of every member in Start Up myStartUp
         System.out.println( myStartUp.getMember( 0 ) );
         System.out.println( myStartUp.getMember( 1 ) );
-        ...
         
         // display the status of every project in Start Up myStartUp
         System.out.println( myStartUp.getProject( 0 ) );
         System.out.println( myStartUp.getProject( 1 ) );
-        ...
         
         // display the number of released project in Start Up stp
-        System.out.println( ... );
+        System.out.println("Number of release project: " + myStartUp.getNumReleasedProject());
         
         // Try another scenario case on your own
         
