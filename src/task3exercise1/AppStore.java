@@ -1,55 +1,83 @@
 package task3exercise1;
 
-public class AppStore {
+public class AppStore implements Application {
     
     // 1. Declare your private attributes here:
+<<<<<<< HEAD
+    // NIM : 1301154446, 
+    // NAMA : Elvaretta Dian Detiana Yucky, 
+    
+    private Application[] appList = new Application[100];
+    private int totalApp = 0;
+
+=======
     // NIM : .........................., 
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+    private appList [] Application;
     //---------------------------------------------------------
+>>>>>>> origin/master
+    
     
     // 2. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    //------------------- your code here-----------------------
+    // NIM : 1301154446, 
+    // NAMA :Elvaretta Dian Detiana Yucky, 
     
-    //---------------------------------------------------------
-    
+    public Application[] getAppList() {
+        Application[] aps = new Application[100];
+        for (int i = 0; i<appList.length; i++)
+        {
+            aps[i]=appList[i];
+        }
+        return aps;
+    }
+
+    public void setAppList(Application[] appList) {
+        this.appList = appList;
+    }
+
+    public int getTotalApp() {
+        return totalApp;
+    }
+
+    public void setTotalApp(int totalApp) {
+        this.totalApp = totalApp;
+    }
     
     // 3. Create method createNewApp( appName, appSize ) here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // instantiate new Application object and insert it in array appList
-    //
-    //------------------- your code here-----------------------
+    // NIM : 1301154446, 
+    // NAMA : Elvaretta Dian Detiana Yucky, 
     
-    //---------------------------------------------------------
-    
+    public void createNewApp(String appName, int appSize)
+    {
+        Application aps = new Application(appName, appSize);
+        if(totalApp<appList.length)
+        {
+            appList(totalApp)=aps;
+            totalApp++;
+        }
+    }
     
     // 4. Create method getApp( id ) : Application here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154446, 
+    // NAMA : Elvaretta Dian Detiana Yucky, 
     // returns Application object from array appList with array index = id
-    //
-    //------------------- your code here-----------------------
     
-    //---------------------------------------------------------
-        
+    public Application getApp(int id)
+    {
+       return appList[id];
+    }
     
     // 5. Create method toString() : String here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154446, 
+    // NAMA : Elvaretta Dian Detiana Yucky, 
     // @return returns String that contains the number of Application available
     // 
     // example : "There are 5 applications ready to install"
     // 
     public String toString() {
-    //------------------- your code here-----------------------
-        return null;
-    
-    //---------------------------------------------------------
+        
+        return "There are "+totalApp+" Application ready to install";
     }
 }
