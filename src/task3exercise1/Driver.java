@@ -6,9 +6,9 @@
 package task3exercise1;
 
 /**
- * NIM 1 : ................ 
- * NIM 2 : ................ 
- * NIM 3 : ................
+ * NIM 1 : 1301150040
+ * NIM 2 : 1301154152 
+ * NIM 3 : 1301154516
  *
  */
 public class Driver {
@@ -25,7 +25,7 @@ public class Driver {
         // and app size 100, 200, 300, and 400 respectively
         aps.createNewApp( "app1" , 100 );
         aps.createNewApp( "app2" , 100 );
-        aps.createNewApp( ..., ... );
+        
         
         // display the status of App Store aps
         System.out.println( aps );
