@@ -8,6 +8,11 @@ public class StartUp {
     // NAMA : Diah Ajeng Dwi Yuniasih 
     //
     //------------------- your code here-----------------------
+    private Member[] member = new Member[50];
+    private Project[] projectList = new Project[50];
+    private int nMember = 0;
+    private int nProject = 0;
+    private int getNum = 0;
     
     //---------------------------------------------------------
     
@@ -37,7 +42,15 @@ public class StartUp {
     // increment integer nMember+1
     //
     //------------------- your code here-----------------------
-    
+    public void addMember(Member m){
+        if(nMember <= member.length){
+            m = member[nMember];
+            nMember++;
+        }
+        else{
+            System.out.println("Member is Full");
+        }
+    }
     //---------------------------------------------------------
     
     
@@ -48,7 +61,9 @@ public class StartUp {
     // returns Member object from array member with array index = id
     //
     //------------------- your code here-----------------------
-    
+    public Member getMember(int id){
+        return member[id];
+    }
     //---------------------------------------------------------
     
     
@@ -60,7 +75,13 @@ public class StartUp {
     // increment integer nProject+1
     //
     //------------------- your code here-----------------------
-    
+    public void createNewProject(String projectName){
+        if(nProject <= projectList.length){
+            Project p = new Project(projectName);
+            projectList[nProject] = p;
+            nProject++;
+        }
+    }
     //---------------------------------------------------------
     
     
@@ -71,7 +92,9 @@ public class StartUp {
     // returns Project object from array projectList with array index = id
     //
     //------------------- your code here-----------------------
-    
+    public Project getProject(int id){
+        return projectList[id];
+    }
     //---------------------------------------------------------
     
     
@@ -82,7 +105,9 @@ public class StartUp {
     // set release status of object Project p by invoking method releaseApp()
     //
     //------------------- your code here-----------------------
-    
+    public void releaseProject(Project p){
+        p.releaseApp();
+    }
     //---------------------------------------------------------
     
     
@@ -93,7 +118,14 @@ public class StartUp {
     // returns number of project with status is released
     //
     //------------------- your code here-----------------------
-    
+    public int getNumReleasedProject(){
+        for (int i = 0; i <= projectList.length; i++) {
+            if(getProject(i).isReleased()==true){
+                getNum++;
+            }
+        }
+        return getNum;
+    }
     //---------------------------------------------------------
     
     

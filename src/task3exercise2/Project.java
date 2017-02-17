@@ -1,11 +1,11 @@
 package task3exercise2;
 
-import java.lang.reflect.Member;
+
 
 
 public class Project {
     private String projectName;
-    private Member teamMember[] = new Member[5];
+    private Member[] teamMember;
     private int nTeam = 0;
     private boolean releaseStatus = false;
     
@@ -19,7 +19,11 @@ public class Project {
     // and set release status = false
     //
     //------------------- your code here-----------------------
-    
+    public Project(String projectName){
+        this.projectName = projectName;
+        teamMember = new Member[5];
+        this.releaseStatus = false;
+    }
     //---------------------------------------------------------
     
     // 2. Declare your Constructor here:
@@ -27,29 +31,27 @@ public class Project {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    public Project(String projectName) {    
-        this.projectName = projectName;
-    }
-
-    public void addMember(Member[] m) {
-        this.teamMember = m;
-        this.nTeam++;
+    public void addMember(Member m) {
+        if(nTeam <= teamMember.length){
+            m = teamMember[nTeam];
+            nTeam++;
+        }
+        else if(nTeam > teamMember.length){
+            System.out.println("The Team is Full");
+        }
     }
 
     public void releaseApp() {
-        this.releaseStatus = true;
+        if(releaseStatus == false){
+            releaseStatus = true;
+        }
     }
 
     public boolean isReleased(){
-        if(releaseStatus = true){
-            return true;
-        } else return false;
+        return releaseStatus;
     }
 
     
-
-    
-
     
     //---------------------------------------------------------
     // 3. Declare your Setter and Getter method here:
@@ -86,11 +88,17 @@ public class Project {
     //
     public String toString() {
         //------------------- your code here-----------------------
-        if (releaseStatus=true){
-            return "Project "+this.projectName+", status is in progress, with team member of"+this.nTeam;
-        } else return "Project "+this.projectName+", status is not in progress, with team member of"+this.nTeam;
-        
+        if (releaseStatus==true){
+            return "Project "+this.projectName+", status is in progress, with team member of "+this.nTeam;
+        } else {
+            return "Project "+this.projectName+", status is not in progress, with team member of "+this.nTeam;
+        }
         
         //---------------------------------------------------------
     }
+
+    boolean isReleaseStatus() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

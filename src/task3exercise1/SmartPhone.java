@@ -9,7 +9,12 @@ public class SmartPhone{
     //------------------- your code here-----------------------
     private Application[] appListS = new Application[10];
     private int totalApp;
-    private int memory;
+    private int memory, i;
+    
+    
+    public SmartPhone(){
+        this.i = 0;
+    }
     //---------------------------------------------------------
 
     
@@ -36,9 +41,17 @@ public class SmartPhone{
     // 
     //------------------- your code here-----------------------
     public void addApplication(AppStore appStore, int appId){
-        appListS[appId] =  appStore.getApp(appId);
-        this.memory = this.memory - appStore.getApp(appId).getAppSize();
-        totalApp++;
+        //appListS[appId] =  appStore.getApp(appId);
+        //this.memory = this.memory - appStore.getApp(appId).getAppSize();
+        //totalApp++;
+        if(i < 10){
+            this.appListS[i] = appStore.getApp(appId);
+            i++;
+        }
+    }
+    
+    public Application getAppList(int id){
+        return appListS[id];
     }
     //---------------------------------------------------------
     // 

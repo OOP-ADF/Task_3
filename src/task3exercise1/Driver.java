@@ -8,7 +8,7 @@ package task3exercise1;
 /**
  * NIM 1 : 1301154558
  * NIM 2 : 1301154250 
- * NIM 3 : ................
+ * NIM 3 : 1301154292
  *
  */
 public class Driver {
@@ -23,9 +23,10 @@ public class Driver {
         // create 4 new Applications within the App Store aps, 
         // with app name = app1, app2, app3, and app4; 
         // and app size 100, 200, 300, and 400 respectively
-        aps.createNewApp( "app1" , 100 );
-        aps.createNewApp( "app2" , 100 );
-        aps.createNewApp( ..., ... );
+        aps.createNewApp( "app1" , 10 );
+        aps.createNewApp( "app2" , 10 );
+        aps.createNewApp( "app3" , 10 );
+        //aps.createNewApp( ..., ... );
         
         // display the status of App Store aps
         System.out.println( aps );
@@ -44,11 +45,11 @@ public class Driver {
         // install applications (in sequence) 
         // app1, app3, and app2 in SmartPhone sm
         // display the status of SmartPhone sm after each installation
-        sm.addApplication( aps, app1 );
+        sm.addApplication( aps, 90 );
         System.out.println(sm);
-        sm.addApplication( aps, app2 );
+        sm.addApplication( aps, 90 );
         System.out.println(sm);
-        sm.addApplication( aps, app3 );
+        sm.addApplication( aps, 90 );
         System.out.println(sm);
         
         // Try another scenario case on your own
