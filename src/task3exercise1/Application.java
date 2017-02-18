@@ -50,7 +50,7 @@ public class Application {
     // 
     // example : "Application name: App1, with size: 3MB"
     public String toString() {
-        return "Application name: " + appName + ", with size: " + appSize;
+        return "Application name: " + getAppName() + ", with size: " + getAppSize();
     }
 
 }

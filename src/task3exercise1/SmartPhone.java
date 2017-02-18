@@ -11,12 +11,16 @@ public class SmartPhone{
     private int totalApp;
     private int memory;
     
+    public SmartPhone() {
+        this.totalApp = 0;
+    }
+    
     // 
     // 2. Declare your Setter and Getter method here:
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 
     // 
-
+    
     public Application[] getAppList() {
         return appList;
     }
@@ -50,8 +54,14 @@ public class SmartPhone{
     // with array index = appId, an Application can be installed 
     // if Application size is less than remaining memory size
     // 
-    public addApplication(AppStore appStore, int appId) {
-       return appId; 
+    public void addApplication(AppStore appStore, int appId) {        
+        if(appStore.getApp(appId).getAppSize() < memory){
+            this.appList[totalApp] = appStore.getApp(appId);
+            memory = memory - appList[totalApp].getAppSize();
+            totalApp++;
+        } else {
+            System.out.println("Memory full :(");
+        }
     }
     
     // 
@@ -63,8 +73,7 @@ public class SmartPhone{
     //
     
     public int getRemainingSize() {
-        int s = memory - appSize;
-        return s;
+        return memory;
     }
     
     // 
