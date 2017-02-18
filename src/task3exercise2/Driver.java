@@ -24,6 +24,7 @@ public class Driver {
         // and add them to StartUp stp
         m = new Member("Alex");
         myStartUp.addMember(m);
+        System.out.println(myStartUp.getMember(1));
         m = new Member("Beni");
         myStartUp.addMember(m);
         m = new Member("Cakra");

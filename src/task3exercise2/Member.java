@@ -61,6 +61,6 @@ public class Member {
     // example : "Member Alex specialized in Java Programming, 
     //            worked on 5 project(s)"
     public String toString() {
-        return "Member " + getName() + " specialize in Java Programming, worked on " + getProjectWorked();
+        return "Member " + name + " specialize in Java Programming, worked on " + projectWorked;
     }
 }
