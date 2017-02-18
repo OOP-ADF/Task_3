@@ -6,21 +6,27 @@ public class Member {
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 
     //
-    
     private String name;
     private String specialization;
     private int projectWorked = 0;
-    
+
     // 2. Declare your 2 Constructor here:
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 
     //
-    
+    public Member(String name) {
+        this.name = name;
+    }
+
+    public Member(String name, String specialization) {
+        this.name = name;
+        this.specialization = specialization;
+    }
+
     // 3. Declare your Setter and Getter method here:
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 
     //
-
     public String getName() {
         return name;
     }
@@ -44,8 +50,7 @@ public class Member {
     public void setProjectWorked(int projectWorked) {
         this.projectWorked = projectWorked;
     }
-    
-    
+
     // 4. Create method toString() : String here:
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 

@@ -1,26 +1,25 @@
 package task3exercise1;
 
-public class SmartPhone{
+public class SmartPhone {
     // 
     // 1. Declare your private attributes here:
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 
     // 
-    
+
     private Application appList[] = new Application[10];
     private int totalApp;
     private int memory;
-    
+
     public SmartPhone() {
         this.totalApp = 0;
     }
-    
+
     // 
     // 2. Declare your Setter and Getter method here:
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 
     // 
-    
     public Application[] getAppList() {
         return appList;
     }
@@ -44,7 +43,7 @@ public class SmartPhone{
     public void setMemory(int memory) {
         this.memory = memory;
     }
-    
+
     // 
     // 3. method addApplication( appStore , appId ) here:
     // NIM : 1301152427 
@@ -54,8 +53,8 @@ public class SmartPhone{
     // with array index = appId, an Application can be installed 
     // if Application size is less than remaining memory size
     // 
-    public void addApplication(AppStore appStore, int appId) {        
-        if(appStore.getApp(appId).getAppSize() < memory){
+    public void addApplication(AppStore appStore, int appId) {
+        if (appStore.getApp(appId).getAppSize() < memory) {
             this.appList[totalApp] = appStore.getApp(appId);
             memory = memory - appList[totalApp].getAppSize();
             totalApp++;
@@ -63,7 +62,7 @@ public class SmartPhone{
             System.out.println("Memory full :(");
         }
     }
-    
+
     // 
     // 4. method method getRemainingSize() : integer here:
     // NIM : 1301152427 
@@ -71,11 +70,10 @@ public class SmartPhone{
     //
     // returns the remaining memory size of the smart phone
     //
-    
     public int getRemainingSize() {
         return memory;
     }
-    
+
     // 
     // 5. Create method toString() : String here:
     // NIM : 1301152427 

@@ -6,8 +6,7 @@
 package task3exercise1;
 
 /**
- * NIM 1 : 1301152427 
- * NIM 2 : 1301150049 
+ * NIM 1 : 1301152427 NIM 2 : 1301150049
  *
  */
 public class Driver {
@@ -29,17 +28,17 @@ public class Driver {
 
         // display the status of App Store aps
         System.out.println(aps);
-        
+
         // display the status of one of application available on App Store aps
         System.out.println(aps.getApp(2));
-        
+
         // instantiate 1 SmartPhone object sm, set the memory size 300
         SmartPhone sm = new SmartPhone();
         sm.setMemory(300);
-        
+
         // display the status of SmartPhone sm        
         System.out.println(sm);
-        
+
         // install applications (in sequence) 
         // app1, app3, and app2 in SmartPhone sm
         // display the status of SmartPhone sm after each installation
@@ -49,7 +48,7 @@ public class Driver {
         System.out.println(sm);
         sm.addApplication(aps, 2);
         System.out.println(sm);
-        
+
         // Try another scenario case on your own
     }
 

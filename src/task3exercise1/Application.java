@@ -6,28 +6,25 @@ public class Application {
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 
     //
-    
     private String appName;
     private int appSize;
-    
+
     // 2. Declare Constructor here:
     // NIM : 1301152427 
     // NAMA : Afnizar Nur Ghifari 
     //
     // Constructor initialize application name and size (MB)
     //
-    
     public Application(String appName, int appSize) {
         this.appName = appName;
         this.appSize = appSize;
     }
-    
 
     // 3. Declare your Setter and Getter method here:
     // NIM : 1301152427
     // NAMA : Afnizar Nur Ghifari 
     //
-    public String getAppName() {    
+    public String getAppName() {
         return appName;
     }
 
@@ -38,7 +35,8 @@ public class Application {
     public int getAppSize() {
         return appSize;
     }
-    public void setAppSize(int appSize) {    
+
+    public void setAppSize(int appSize) {
         this.appSize = appSize;
     }
 
