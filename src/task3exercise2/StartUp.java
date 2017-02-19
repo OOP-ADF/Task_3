@@ -56,7 +56,7 @@ public class StartUp {
     // increment integer nMember+1
     //
     public void addMember(Member m) {
-        m = Member[nMember];
+        Member[nMember] = m;
         nMember++;
     }
 

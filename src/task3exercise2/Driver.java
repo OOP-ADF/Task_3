@@ -6,7 +6,8 @@
 package task3exercise2;
 
 /**
- * NIM 1 : 1301152427 NIM 2 : 1301150049
+ * NIM 1 : 1301152427 
+ * NIM 2 : 1301150049
  *
  */
 public class Driver {
@@ -24,7 +25,7 @@ public class Driver {
         // and add them to StartUp stp
         m = new Member("Alex");
         myStartUp.addMember(m);
-        System.out.println(myStartUp.getMember(1));
+        System.out.println(myStartUp.getMember(0));
         m = new Member("Beni");
         myStartUp.addMember(m);
         m = new Member("Cakra");
@@ -65,7 +66,6 @@ public class Driver {
         myStartUp.releaseProject(p);
 
         // display the status of every member in Start Up myStartUp
-        System.out.println(myStartUp.getMember(0));
         System.out.println(myStartUp.getMember(1));
         System.out.println(myStartUp.getMember(2));
         System.out.println(myStartUp.getMember(3));
