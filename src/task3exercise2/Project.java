@@ -12,7 +12,10 @@ public class Project {
     // and set release status = false
     //
     //------------------- your code here-----------------------
-    
+        private String projectName;
+        private Member teamMember = new Member[5];
+        private int nTeam = 0;
+        private boolean releaseStatus = false;        
     //---------------------------------------------------------
     
     // 2. Declare your Constructor here:
