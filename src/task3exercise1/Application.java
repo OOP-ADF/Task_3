@@ -57,7 +57,9 @@ public class Application {
     // example : "Application name: App1, with size: 3MB"
     public String toString() {
         //------------------- your code here-----------------------
-        return null;
+        
+        
+        return "application name = "+appName+"application size: "+appSize;
         
         //---------------------------------------------------------
     }

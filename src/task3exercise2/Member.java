@@ -11,7 +11,7 @@ public class Member {
     private String specialization;
     private int projectWorked = 0;
     //---------------------------------------------------------
-    
+
     // 2. Declare your 2 Constructor here:
     // NIM : 1301154217 
     // NAMA : Ahmad Fathoni Zumaro 
@@ -25,22 +25,18 @@ public class Member {
         this.Name = Name;
         this.specialization = specialization;
     }
-    
-    public void setProjectWorked(int projectWorked) {    
-        this.projectWorked = projectWorked;
-   
+
     //---------------------------------------------------------
     // 3. Declare your Setter and Getter method here:
     // NIM : 1301154217
     // NAMA : Ahmad FAthoni Zumaro 
     //
     //------------------- your code here-----------------------
-     public String getName() {
+    public String getName() {
         return Name;
-    
     }
 
-    public void setName(String Name) {    
+    public void setName(String Name) {
         this.Name = Name;
     }
 
@@ -54,8 +50,11 @@ public class Member {
 
     public int getProjectWorked() {
         return projectWorked;
-        
-    
+
+    }
+
+    public void setProjectWorked(int projectWorked) {
+        this.projectWorked = projectWorked;
     }
 
     //---------------------------------------------------------
@@ -70,8 +69,8 @@ public class Member {
     //            worked on 5 project(s)"
     public String toString() {
         //------------------- your code here-----------------------
-        return null;
-        
+        return "memberName: " + Name + "Specialization: " + specialization + "number of projectworked: " + projectWorked;
+
         //---------------------------------------------------------
     }
 

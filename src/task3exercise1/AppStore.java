@@ -7,7 +7,7 @@ public class AppStore {
     // NAMA : Ahmad Fathoni Zumaro
     //
     //------------------- your code here-----------------------
-   private int appList[];
+   private Application appList[];
    private int totalApp;
   
     //---------------------------------------------------------
@@ -17,11 +17,11 @@ public class AppStore {
     // NAMA :Ahmad Fathoni Zumaro
     //
     //------------------- your code here-----------------------
-     public int[] getAppList() {
+     public Application[] getAppList() {
         return appList;
     }
 
-    public void setAppList(int[] appList) {
+    public void setAppList(int a) {
         this.appList = appList;
     }
 
@@ -41,8 +41,9 @@ public class AppStore {
     // instantiate new Application object and insert it in array appList
     //
     //------------------- your code here-----------------------
-    public AppStore( String appName,int appSize ){
-         totalApp = 0;
+    public void CreateNewApp( String appName,int appSize ){
+            AppStore A = new AppStore();
+            appList = new Application[100];
         
     }
     //---------------------------------------------------------
@@ -54,7 +55,9 @@ public class AppStore {
     // returns Application object from array appList with array index = id
     //
     //------------------- your code here-----------------------
-    
+    public String getApp(id){
+        
+    }
     //---------------------------------------------------------
         
     
