@@ -59,8 +59,8 @@ public class Member {
 
     //---------------------------------------------------------
     // 4. Create method toString() : String here:
-    // NIM : ..........................,
-    // NAMA : ........................., 
+    // NIM : 1301154217
+    // NAMA : Ahmad Fathoni Zumaro 
     //
     // returns String that contains member name, specialization,
     // and number of project worked
