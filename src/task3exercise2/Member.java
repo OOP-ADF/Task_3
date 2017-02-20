@@ -6,8 +6,8 @@ public class Member {
     // NIM : 1301154525 
     // NAMA : Karina Hasya Utami Dewi 
     //
-    private String Name;
-    private String Specialization;
+    private String name;
+    private String specialization;
     private int projectwork;
    
     
@@ -15,41 +15,38 @@ public class Member {
     // NIM : 1301154525
     // NAMA : Karina Hasya Utami Dewi 
     //
-    public Member (){
-        this.Name = "Name";
-        this.Specialization = "Specialization";
-        this.projectwork = 0;
+    public Member (String name){
+        this.name = name;
     }
     
-    public Member (String Name, String Specialization){
-        this.Name = "Name";
-        this.Specialization = "Specialization";
-        this.projectwork = 0; 
-    }
-    public String getName() {   
-       return Name;
-    }
-
-    public void setName(String Name) {
-        this.Name = Name;
-    }
-
-    public String getSpecialization() {
-        return Specialization;
-    }
-
-    public void setSpecialization(String Specialization) {
-        this.Specialization = Specialization;
-    }
-
-    public int getProjectwork() {
-        return projectwork;
+    public Member (String name, String specialization){
+        this.name = name;
+        this.specialization = specialization;
     }
 
     // 3. Declare your Setter and Getter method here:
     // NIM : 1301154525
     // NAMA : Karina Hasya Utami Dewi 
     //
+     public String getName() {   
+       return name;
+    }
+
+    public void setName(String Name) {
+        this.name = name;
+    }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
+
+    public int getProjectwork() {
+        return projectwork;
+    }
     public void setProjectwork(int projectwork) {    
         this.projectwork = projectwork;
     }
@@ -65,7 +62,7 @@ public class Member {
     //            worked on 5 project(s)"
     @Override
     public String toString() {
-       String a = "Member "+Name+" specialized in  "+Specialization+" and already worked on "+projectwork+" projec(s) ";
+       String a = "Member "+name+" specialized in  "+specialization+" and already worked on "+projectwork+" projec(s) ";
         
         return a; 
                

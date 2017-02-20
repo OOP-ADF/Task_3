@@ -57,7 +57,7 @@ public class Project {
      this.teamMember[nTeam] = m;
      nTeam++;
      
-     m.setProjectWorked(m.getProjectWorked()+1);
+     m.setProjectwork(m.getProjectwork()+1);
  }
     
     

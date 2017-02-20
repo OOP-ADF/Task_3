@@ -6,7 +6,7 @@ public class AppStore {
     // NIM : 1301154455 
     // NAMA : AYLA PUTERI YANZA
     //
-        private int totalApp = 0;
+        private int totalApp;
         private Application[] appList = new Application[100];
         int i;
         
@@ -14,17 +14,8 @@ public class AppStore {
     // NIM : 1301154455
     // NAMA : AYLA PUTERI YANZA 
     //
-    public void setappList(Application x){
-        this.appList[i] = x;
-        i++;
-    }
-
     public Application[] getAppList() {
         return appList;
-    }
-    
-    public void setTotalApp(int totalApp) {
-        this.totalApp = totalApp;
     }
     
     public int getTotalApp() {
@@ -49,7 +40,7 @@ public class AppStore {
     // returns Application object from array appList with array index = id
     //
     public Application getApp(int id){
-        return this.appList[id];
+        return appList[id];
     }
         
     
@@ -63,7 +54,7 @@ public class AppStore {
     public String toString() {
         
         String a = "There are "+totalApp+" application read to install";
-        return null;
+        return a;
         
     
     }
