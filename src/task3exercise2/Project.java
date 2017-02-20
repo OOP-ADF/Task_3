@@ -1,38 +1,76 @@
 package task3exercise2;
 
-
 public class Project {
 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154329
+    // NAMA : ilham nugraha 
     //
     // Constructor initialize project name, 
     // instantiate array member with size of [5],
     // and set release status = false
     //
     //------------------- your code here-----------------------
-    
+    private String projectName;
+    private int teamMember[];
+    private int nTeam =0;
+    private boolean releaseStatus =false;
+
     //---------------------------------------------------------
-    
     // 2. Declare your Constructor here:
-    // NIM : .........................., 
+    // NIM : 1301154329 
+    // NAMA : ilham nugraha
+    //
+    //------------------- your code here-----------------------
+    public Project(String projectName) {
+        this.projectName = projectName;
+        this.releaseStatus = false;
+        this.teamMember = new Member[5];
+    }
+
+    //---------------------------------------------------------
+    //3. Declare your Setter and Getter method here:
+    // NIM : ..........................,
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+    public String getProjectName() {
+        return projectName;
+    }
+
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
+    }
+
+    public Member[] getTeamMember() {
+        return teamMember;
+    }
+
+    public void setTeamMember(Member[] teamMember) {
+        this.teamMember = teamMember;
+    }
+
+    public int getnTeam() {
+        return nTeam;
+    }
+
+    public void setnTeam(int nTeam) {
+        this.nTeam = nTeam;
+    }
+
+    public boolean isReleaseStatus() {
+        return releaseStatus;
+    }
+
+    public void setReleaseStatus(boolean releaseStatus) {
+        this.releaseStatus = releaseStatus;
+    }
+
+    public boolean isReleased() {
+        return releaseStatus;
+    }
     //---------------------------------------------------------
-    
-    
-    // 3. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-    
-    
+
     // 4. Declare method addMember( m : Member ) here:
     // NIM : .........................., 
     // NAMA : ........................., 
@@ -41,10 +79,13 @@ public class Project {
     // increment integer nTeam+1
     //
     //------------------- your code here-----------------------
-    
+    public void addMember(Member m) {
+        this.teamMember[nTeam] = m;
+        nTeam++;
+        m.setProjectWorked(m.getProjectWorked() + 1);
+    }
+
     //---------------------------------------------------------
-    
-    
     // 5. Declare method releaseApp() here:
     // NIM : .........................., 
     // NAMA : ........................., 
@@ -52,10 +93,11 @@ public class Project {
     // set release status = true
     //
     //------------------- your code here-----------------------
-    
+    public void releaseApp() {
+        this.releaseStatus = true;
+    }
+
     //---------------------------------------------------------
-    
-    
     // 6. Create method toString() : String here:
     // NIM : .........................., 
     // NAMA : ........................., 
@@ -65,10 +107,17 @@ public class Project {
     // 
     // example : "Project Exodus, status not releaser, with team member of 4"
     //
-    public String toString() {
     //------------------- your code here-----------------------
-        return null;
-    
-    //---------------------------------------------------------
+    public String toString() {
+        String x;
+        if (releaseStatus == false) {
+            x = "unknow";
+        } else {
+            x = "in progress";
+        }
+        String p = "Project " + projectName + " status is " + x + " with team member of " + nTeam;
+        return p;
+
+        //---------------------------------------------------------
     }
 }
