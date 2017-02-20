@@ -6,8 +6,8 @@ public class Application {
     // NIM : 1301154455 
     // NAMA : AYLA PUTERI YANZA 
     //
-        private String appName;
-        private int appSize;
+        private String AppName;
+        private int AppSize;
     
     //---------------------------------------------------------
     
@@ -19,9 +19,9 @@ public class Application {
        public Application(String a){
            this.AppName = a; 
         }*/
-       public Application(String appName, int appSize){
-           this.appName = appName;
-           this.appSize = appSize;
+       public Application(String a, int b){
+           this.AppName = a;
+           this.AppSize = b;
        }
    
    
@@ -29,11 +29,17 @@ public class Application {
     // NIM : 1301154455
     // NAMA : AYLA PUTERI YANZA
     //
-     public void setAppSize(){
-            this.appSize = appSize;
+     public void setAppName(String a){
+            this.AppName = a;
+        }
+     public String getAppName(){
+            return AppName;
+        }
+     public void setAppSize(int b){
+            this.AppSize = b;
      }
      public int getAppSize(){
-            return appSize;
+            return AppSize;
      }
     
     // 4. Create method toString() : String here:
@@ -44,7 +50,7 @@ public class Application {
     // 
     // example : "Application name: App1, with size: 3MB"
     public String toString() {
-        String a = "Application Name : " + appName + ", with size : " + appSize;
+        String a = "Application Name : " + getAppName() + ", with size : " + getAppSize();
         return a;
     }
     
