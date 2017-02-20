@@ -8,7 +8,10 @@ public class StartUp {
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
-    
+    private Member[] member = new Member[50];
+    private Project[] projectList = new Project[50];
+    private int nMember = 0;
+    private int nProject = 0;
     //---------------------------------------------------------
     
     // 2. Declare your Constructor here:
@@ -37,7 +40,10 @@ public class StartUp {
     // increment integer nMember+1
     //
     //------------------- your code here-----------------------
-    
+    public void addMember (Member m){
+        this.member[nMember] = m;
+        nMember++;
+    }
     //---------------------------------------------------------
     
     
