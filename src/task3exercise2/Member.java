@@ -7,8 +7,7 @@ public class Member {
     // NAMA : MUHAMMAD SHABRAN METAFARADY 
     //
     //------------------- your code here-----------------------
-        private String name;
-        private String specialization;
+        private String name, specialization;
         private int projectWorked = 0;
     //---------------------------------------------------------
     
@@ -20,7 +19,6 @@ public class Member {
         public Member(String name) {
             this.name = name;
         }
-        
         
         public Member(String name, String specialization) {
             this.name = name;
@@ -41,7 +39,6 @@ public class Member {
         this.name = name;
     }
     
-    
     public String getSpecialization() {
         return specialization;
     }
@@ -49,7 +46,6 @@ public class Member {
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
     }
-    
     
     public int getProjectWorked() {
         return projectWorked;

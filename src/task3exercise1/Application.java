@@ -6,7 +6,7 @@ public class Application {
     // NIM : 1301154413 
     // NAMA : MUHAMMAD SHABRAN METAFARADY
     //
-    
+    //---------------------------------------------------------
         private String appName;
         private int appSize;
     //---------------------------------------------------------
@@ -57,7 +57,6 @@ public class Application {
         public String toString() {
     //------------------- your code here-----------------------
         return ("Application name : " + getAppName() + " , with size: " + getAppSize());
-    
     //---------------------------------------------------------
     }
 
