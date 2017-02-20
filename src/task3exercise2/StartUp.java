@@ -8,7 +8,6 @@ public class StartUp {
     // NAMA : Kukuh Rahingga Permadi
     //
     //------------------- your code here-----------------------
-    
     private Member[] member = new Member[50];
     private Project[] projectList = new Project [50];
     private int nMember = 0;
@@ -44,13 +43,13 @@ public class StartUp {
     // increment integer nMember+1
     //
     //------------------- your code here-----------------------
-    
+  
     public void addMember (Member m)
     {
         this.member[nMember] = m;
         nMember++;
     }
-    
+
     //---------------------------------------------------------
     
     
@@ -61,12 +60,12 @@ public class StartUp {
     // returns Member object from array member with array index = id
     //
     //------------------- your code here-----------------------
-    
+
     public Member getMember (int id)
     {
        return member[id];
     }
-    
+
     //---------------------------------------------------------
     
     
@@ -78,14 +77,14 @@ public class StartUp {
     // increment integer nProject+1
     //
     //------------------- your code here-----------------------
-    
+
     public void createNewProject (String projectName)
     {
         Project prj = new Project(projectName);
         projectList[nProject] = prj;
         nProject++;
     }
-    
+
     //---------------------------------------------------------
     
     
@@ -95,8 +94,8 @@ public class StartUp {
     //
     // returns Project object from array projectList with array index = id
     //
-    //------------------- your code here-----------------------
-    
+    //------------------- your code here-----------------------\
+  
     public Project getProject (int id)
     {
         return projectList[id];
@@ -112,7 +111,6 @@ public class StartUp {
     // set release status of object Project p by invoking method releaseApp()
     //
     //------------------- your code here-----------------------
-    
     public void releaseProject (Project p)
     {
         p.releaseApp();
@@ -128,8 +126,7 @@ public class StartUp {
     // returns number of project with status is released
     //
     //------------------- your code here-----------------------
-    
-    public int getNumReleasedProject()
+     public int getNumReleasedProject()
     {
         int numRelease = 0;
         for (int i = 0; i < nProject; i++)
@@ -138,7 +135,7 @@ public class StartUp {
         
         return numRelease;
                 
-    }
+     }
     
     //---------------------------------------------------------
 

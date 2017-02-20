@@ -7,7 +7,6 @@ public class SmartPhone{
     // NAMA : Kukuh Rahingga Permadi
     // 
     //------------------- your code here-----------------------
-    
     private Application[] appList = new Application[10];
     private int totalApp = 0;
     private int memory;
@@ -34,9 +33,7 @@ public class SmartPhone{
     public int getTotalApp() {
         return totalApp;
     }
-    
-
-    
+  
     //---------------------------------------------------------
 
     
@@ -50,7 +47,6 @@ public class SmartPhone{
     // if Application size is less than remaining memory size
     // 
     //------------------- your code here-----------------------
-    
     public void addApplication(AppStore appStore, int appId)
     {
         Application app = appStore.getApp(appId);
@@ -78,7 +74,6 @@ public class SmartPhone{
     // returns the remaining memory size of the smart phone
     //
     //------------------- your code here-----------------------
-    
     public int getRemainingSize()
     {
         int use = 0;
@@ -110,6 +105,7 @@ public class SmartPhone{
     //
     public String toString() {
     //------------------- your code here-----------------------
+
         String p;
         if (stat == 0)
         {
