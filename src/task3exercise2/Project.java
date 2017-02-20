@@ -3,8 +3,8 @@ package task3exercise2;
 public class Project {
 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154329
+    // NAMA : ilham nugraha 
     //
     // Constructor initialize project name, 
     // instantiate array member with size of [5],
@@ -12,14 +12,14 @@ public class Project {
     //
     //------------------- your code here-----------------------
     private String projectName;
-    private Member[] teamMember;
-    private int nTeam = 0;
-    private boolean releaseStatus;
+    private int teamMember[];
+    private int nTeam =0;
+    private boolean releaseStatus =false;
 
     //---------------------------------------------------------
     // 2. Declare your Constructor here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154329 
+    // NAMA : ilham nugraha
     //
     //------------------- your code here-----------------------
     public Project(String projectName) {
@@ -29,7 +29,7 @@ public class Project {
     }
 
     //---------------------------------------------------------
-    // 3. Declare your Setter and Getter method here:
+    //3. Declare your Setter and Getter method here:
     // NIM : ..........................,
     // NAMA : ........................., 
     //

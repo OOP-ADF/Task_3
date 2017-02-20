@@ -3,8 +3,8 @@ package task3exercise1;
 public class SmartPhone{
     // 
     // 1. Declare your private attributes here:
-    // NIM : 1301150063
-    // NAMA : Alfian Rahman Aziz 
+    // NIM : 1301154329 
+    // NAMA : ilham nugraha 
     // 
     //------------------- your code here-----------------------
     
@@ -18,8 +18,8 @@ public class SmartPhone{
     
     // 
     // 2. Declare your Setter and Getter method here:
-    // NIM : 1301150063  
-    // NAMA : Alfian Rahman Aziz 
+    // NIM : 1301154329 
+    // NAMA : ilham nugraha 
     // 
     //------------------- your code here-----------------------
 
@@ -113,17 +113,12 @@ public class SmartPhone{
     public String toString() {
     //------------------- your code here-----------------------
         String x;
-        if (this.x == 0)
-        {
+        if (this.x == 0){
             x = "Memory size " + memory + "MB , " + (totalApp+1) + " application installed, remaining memory size : " + getRemainingSize() + "MB.";
-        }
-        else
-        {
+        }else{
             x = "Memory Penuh";
         }
-        
         return x;
-    
     //---------------------------------------------------------
     }
 }
