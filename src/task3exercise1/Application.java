@@ -47,16 +47,16 @@ public class Application {
     }
     //---------------------------------------------------------
     
-    
+    //---------------------------------------------------------
     // 4. Create method toString() : String here:
-    // NIM : 1301150063 
-    // NAMA : Alfian Rahman Aziz 
+
+    // NIM : 1301154217
+    // NAMA : Ahmad Fathoni Zumaro 
+
     //
-    // returns String that contains application name and application size 
+    // returns String that contains application name and application size
     // 
     // example : "Application name: App1, with size: 3MB"
-    
-    //------------------- your code here-----------------------
     public String toString() {
         String x = "Application Name: " + appName + ", " + "With Size: "+ appSize; 
         return x ;
