@@ -69,7 +69,8 @@ public class Member {
     //            worked on 5 project(s)"
     public String toString() {
         //------------------- your code here-----------------------
-        return "memberName: " + Name + "Specialization: " + specialization + "number of projectworked: " + projectWorked;
+         return "Member " + Name + " specialized in " + specialization + " and already worked on " + projectWorked + " projec(s)"; 
+
 
         //---------------------------------------------------------
     }
