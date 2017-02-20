@@ -3,45 +3,55 @@ package task3exercise1;
 public class Application {
 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154455 
+    // NAMA : AYLA PUTERI YANZA 
     //
-    //------------------- your code here-----------------------
+        private String AppName;
+        private int AppSize;
     
     //---------------------------------------------------------
     
     // 2. Declare Constructor here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 130115445 
+    // NAMA : AYLA PUTERI YANZA
     //
-    // Constructor initialize application name and size (MB)
-    //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-    
-    
+       /*public Application(){}
+       public Application(String a){
+           this.AppName = a; 
+        }*/
+       public Application(String a, int b){
+           this.AppName = a;
+           this.AppSize = b;
+       }
+   
+   
     // 3. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154455
+    // NAMA : AYLA PUTERI YANZA
     //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-    
+     public void setAppName(String a){
+            this.AppName = a;
+        }
+     public String getAppName(){
+            return AppName;
+        }
+     public void setAppSize(int b){
+            this.AppSize = b;
+     }
+     public int getAppSize(){
+            return AppSize;
+     }
     
     // 4. Create method toString() : String here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154455
+    // NAMA : AYLA PUTERI YANZA
     //
     // returns String that contains application name and application size 
     // 
     // example : "Application name: App1, with size: 3MB"
     public String toString() {
-    //------------------- your code here-----------------------
-        return null;
-    
-    //---------------------------------------------------------
+        String a = "Application Name : " + getAppName() + ", with size : " + getAppSize();
+        return a;
     }
-
+    
 }
