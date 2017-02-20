@@ -24,13 +24,13 @@ public class Driver {
         // instantiate 5 new Member objects 
         // with name = Alex, Beni, Cakra, Deni, and Eric; 
         // and add them to StartUp stp
-        m = new Member("Alex");
+        m = new Member("Alex","Programmer");
         myStartUp.addMember( m );
-        m = new Member("Beni");
+        m = new Member("Beni","Programmer");
         myStartUp.addMember( m );
-        m = new Member("Cakra");
+        m = new Member("Cakra","Designer");
         myStartUp.addMember( m );
-        m = new Member("Deni");
+        m = new Member("Deni","Designer");
         myStartUp.addMember( m );
         m = new Member("Eric");
         myStartUp.addMember( m );
