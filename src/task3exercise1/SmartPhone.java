@@ -3,8 +3,8 @@ package task3exercise1;
 public class SmartPhone{
     // 
     // 1. Declare your private attributes here:
-    // NIM : 1301154287 
-    // NAMA : Jeremiah Hasudungan 
+    // NIM : 1301150035
+    // NAMA : Kukuh Rahingga Permadi
     // 
     //------------------- your code here-----------------------
     private Application[] appList = new Application[10];
@@ -17,12 +17,13 @@ public class SmartPhone{
     
     // 
     // 2. Declare your Setter and Getter method here:
-    // NIM : 1301154287 
-    // NAMA : Jeremiah Hasudungan 
+    // NIM : 1301150035
+    // NAMA : Kukuh Rahingga Permadi
     // 
     //------------------- your code here-----------------------
+
     public void setMemory(int memory) {
-    this.memory = memory;
+        this.memory = memory;
     }
 
     public Application[] getAppList() {
@@ -32,15 +33,14 @@ public class SmartPhone{
     public int getTotalApp() {
         return totalApp;
     }
-    
-    
+  
     //---------------------------------------------------------
 
     
     // 
     // 3. method addApplication( appStore , appId ) here:
-    // NIM : 1301154287 
-    // NAMA : Jeremiah Hasudungan 
+    // NIM : 1301150035
+    // NAMA : Kukuh Rahingga Permadi
     //
     // get an Application object from array appList of an appStore 
     // with array index = appId, an Application can be installed 
@@ -63,14 +63,13 @@ public class SmartPhone{
        
     }
     
-    
     //---------------------------------------------------------
     
         
     // 
     // 4. method method getRemainingSize() : integer here:
-    // NIM : 1301154287 
-    // NAMA : Jeremiah Hasudungan 
+    // NIM : 1301150035
+    // NAMA : Kukuh Rahingga Permadi
     //
     // returns the remaining memory size of the smart phone
     //
@@ -95,8 +94,8 @@ public class SmartPhone{
     
     // 
     // 5. Create method toString() : String here:
-    // NIM : 1301154287 
-    // NAMA : Jeremiah Hasudungan 
+    // NIM : 1301150035
+    // NAMA : Kukuh Rahingga Permadi
     // 
     // returns String that contains the smart phone total memory size, 
     // number of application installed, and remaining memory size 
@@ -106,7 +105,8 @@ public class SmartPhone{
     //
     public String toString() {
     //------------------- your code here-----------------------
-         String p;
+
+        String p;
         if (stat == 0)
         {
             p = "Memory size " + memory + "MB , " + totalApp + " application installed, remaining memory size : " + getRemainingSize() + "MB.";
