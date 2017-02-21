@@ -6,7 +6,7 @@ public class Member {
     // NIM : 1301154567, 
     // NAMA : Nindia Cahyaning Putri, 
     //
-    //------------------- your code here-----------------------
+    //------------------- your code here------------------------
 
     private String name; //nama member
     private String specialization;  //spesialisasi
