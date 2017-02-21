@@ -6,7 +6,7 @@ public class AppStore {
     // NIM :1301154553 .........................., 
     // NAMA : Ranestari Sastriani........................., 
     //
-   private Application[100] appList;
+   private Application[] appList=new Application[100];
    private int totalApp;
    
  
@@ -21,6 +21,15 @@ public class AppStore {
     public int getTotalApp() {
         return totalApp;
     }
+
+    public Application[] getAppList() {
+        return appList;
+    }
+
+    public void setAppList(Application[] appList) {
+        this.appList = appList;
+    }
+    
     
     
 
@@ -31,7 +40,11 @@ public class AppStore {
     //
     //------------------- your code here-----------------------
     //---------------------------------------------------------
-    
+    public void createNewApp(String appName,int appSize){
+     Application app=new Application(appName,appSize)   ;
+     appList[totalApp]=app;
+     totalApp++;
+    }
 
 // 4. Create method getApp( id ) : Application here:
     // NIM : 1301154553..........................,
@@ -39,7 +52,10 @@ public class AppStore {
     // returns Application object from array appList with array index = id
     //
     //------------------- your code here-----------------------
-    //---------------------------------------------------------
+    public Application getApp(int id){
+        return appList[id];
+    }
+//---------------------------------------------------------
     // 5. Create method toString() : String here:
     // NIM : ..........................,
     // NAMA : ........................., 
@@ -47,10 +63,12 @@ public class AppStore {
     // 
     // example : "There are 5 applications ready to install"
     // 
+   @Override
     public String toString() {
         //------------------- your code here-----------------------
-        return null;
+        return "There are "+totalApp+"ready to install";
         
+         
         //---------------------------------------------------------
     }
 }
