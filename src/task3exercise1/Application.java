@@ -1,14 +1,13 @@
 package task3exercise1;
-
 public class Application {
 
     // 1. Declare your private attributes here:
     // NIM : 1301154567, 
     // NAMA : Nindia Cahyaning Putri, 
-    String appName;         //nama aplikasi
-    int appSize;            //ukurannya
+    private String appName;         //nama aplikasi
+    private int appSize;            //ukurannya
     
-    
+    //
     // 2. Declare Constructor here:
     // NIM : 1301154567, 
     // NAMA : Nindia Cahyaning Putri, 
@@ -48,16 +47,13 @@ public class Application {
     // NIM : 1301154567, 
     // NAMA : Nindia Cahyaning Putri,  
     
+    @Override
     public String toString() {
-    
-        String name = "Application name: " +getAppName()+ "with size: " + getAppSize() ;
-    
-    // returns String that contains application name and application size 
-     // example : "Application name: App1, with size: 3MB"
-  
-        return null;
-    
+        // returns String that contains application name and application size 
+        // example : "Application name: App1, with size: 3MB"
+        return "Application name: " +getAppName()+ "with size: " +getAppSize();
   
     }
 
 }
+//---------------------------
