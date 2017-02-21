@@ -6,8 +6,8 @@ public class SmartPhone{
     // NIM : 1301154553.........................., 
     // NAMA :Ranestari Sastriani ........................., 
     // 
-    private Application[10] appList;
-    private int totalApp;
+    private Application[] appList=new Application[10];
+    private int totalApp=0;
     private int memory;
     
     // 
@@ -30,6 +30,14 @@ public class SmartPhone{
     public void setMemory(int memory) {
         this.memory = memory;
     }
+
+    public Application[] getAppList() {
+        return appList;
+    }
+
+    public void setAppList(Application[] appList) {
+        this.appList = appList;
+    }
     
     
     // 
@@ -41,10 +49,14 @@ public class SmartPhone{
     // with array index = appId, an Application can be installed 
     // if Application size is less than remaining memory size
     // 
-    public void addApplication(Appstore appstore, int appId){
-        if (totalApp < appList.length){
-            appList[totalApp] = appstore;
+  public void addApplication(AppStore appStore, int appId){
+        Application app= appStore.getApp(appId);
+        if (app.getAppSize()< getRemainingSize()){
+            appList[totalApp]=app;
             totalApp++;
+        }
+        else{
+            int stat=1;
         }
     }
     
@@ -57,7 +69,17 @@ public class SmartPhone{
     // returns the remaining memory size of the smart phone
     //
     //------------------- your code here-----------------------
-    
+    public int getRemainingSize(){
+        int use=0;
+        for (int i=0;i<totalApp;i++){
+            if (appList[i]==null){}
+            else
+            {
+                use = use + appList[i].getAppSize();
+            }
+        }
+        return (memory-use);
+    }
     //---------------------------------------------------------
         
     
@@ -72,9 +94,10 @@ public class SmartPhone{
     // example : "memory size 100MB, 5 application installed, 
     //            remaining memory size: 60MB"
     //
+    @Override
     public String toString() {
     //------------------- your code here-----------------------
-        return null;
+        return "memory size "+memory+" mb,"+totalApp+" application installed, remaining memory size : " + getRemainingSize() + "MB.";
     
     //---------------------------------------------------------
     }
