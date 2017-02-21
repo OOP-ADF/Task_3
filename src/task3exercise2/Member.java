@@ -29,7 +29,7 @@ public class Member {
          this.specialization = specialization;
      }
 
-    //---------------------------------------------------------       
+    //----------------------------------------------------------       
      
     // 3. Declare your Setter and Getter method here:
     // NIM : 1301154567, 

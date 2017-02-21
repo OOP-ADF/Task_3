@@ -7,7 +7,7 @@ public class Application {
     private String appName;         //nama aplikasi
     private int appSize;            //ukurannya
     
-    
+    //
     // 2. Declare Constructor here:
     // NIM : 1301154567, 
     // NAMA : Nindia Cahyaning Putri, 
