@@ -6,9 +6,9 @@
 package task3exercise2;
 
 /**
- * NIM 1 : ................ 
- * NIM 2 : ................ 
- * NIM 3 : ................
+ * NIM 1 : 1301154511 
+ * NIM 2 : 1301154315 
+ * NIM 3 : 130115
  *
  */
 public class Driver {
@@ -28,7 +28,12 @@ public class Driver {
         myStartUp.addMember( m );
         m = new Member("Beni");
         myStartUp.addMember( m );
-        ...
+        m = new Member("Cakra");
+        myStartUp.addMember( m );
+        m = new Member("Deni");
+        myStartUp.addMember( m );
+        m = new Member("Eric");
+        myStartUp.addMember( m );
         
         
         // create 2 Project object within the Start Up stp, 
@@ -43,7 +48,12 @@ public class Driver {
         p.addMember(m); 
         m = myStartUp.getMember( 1 );
         p.addMember(m);
-        ...
+        m = myStartUp.getMember( 2 );
+        p.addMember(m); 
+        m = myStartUp.getMember( 3 );
+        p.addMember(m);
+        m = myStartUp.getMember( 4 );
+        p.addMember(m); 
         
         // add Beni, Cakra, Deni, and Eric into Project2  
         p = myStartUp.getProject( 1 );
@@ -51,7 +61,10 @@ public class Driver {
         p.addMember(m); 
         m = myStartUp.getMember( 2 );
         p.addMember(m);
-        ...
+        m = myStartUp.getMember( 3 );
+        p.addMember(m); 
+        m = myStartUp.getMember( 4 );
+        p.addMember(m); 
         
         // set release one of the project
         p = myStartUp.getProject( 1 );
@@ -60,15 +73,20 @@ public class Driver {
         // display the status of every member in Start Up myStartUp
         System.out.println( myStartUp.getMember( 0 ) );
         System.out.println( myStartUp.getMember( 1 ) );
-        ...
+        System.out.println( myStartUp.getMember( 2 ) );
+        System.out.println( myStartUp.getMember( 3 ) );
+        System.out.println( myStartUp.getMember( 4 ) );
+        
         
         // display the status of every project in Start Up myStartUp
         System.out.println( myStartUp.getProject( 0 ) );
         System.out.println( myStartUp.getProject( 1 ) );
-        ...
+        System.out.println( myStartUp.getProject( 2 ) );
+        System.out.println( myStartUp.getProject( 3 ) );
+        System.out.println( myStartUp.getProject( 4 ) );
         
         // display the number of released project in Start Up stp
-        System.out.println( ... );
+        System.out.println();
         
         // Try another scenario case on your own
         
