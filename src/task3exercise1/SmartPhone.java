@@ -3,10 +3,46 @@ package task3exercise1;
 public class SmartPhone{
     // 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // 
-    //------------------- your code here-----------------------
+    // NIM : 1301154315
+    // NAMA : Niko Novian Pratama 
+    private Application[] applist = new Application[10];
+    private int totalApp;
+    private int memory;
+
+    public void setMemory(int memory) 
+    {
+        this.memory = memory;
+    }
+
+    public int getTotalApp() 
+    {
+        return totalApp;
+    }
+    
+    public void addApplication(AppStore appStore; int appId)
+    {
+        this.appId = appId;
+        if (appSize < memory)
+        {
+            System.out.println("Application installed");
+        }
+    }
+    
+    public Application getAppId(int id)
+    {
+        return appList(appId) 
+    }
+    
+    public int getRemainingSize()
+    {
+        return memory;
+    }
+    
+    public String toString()
+    {
+        String a = "memory size "+appSize+", "+totalApp+"application installed, remaining memory size: "+appSize;
+    }
+    
     
     //---------------------------------------------------------
 

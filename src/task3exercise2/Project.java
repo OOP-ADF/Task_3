@@ -4,23 +4,38 @@ package task3exercise2;
 public class Project {
 
     // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
+    // NIM : 1301154315
+    // NAMA : Niko Novian Pratama
     //
     // Constructor initialize project name, 
     // instantiate array member with size of [5],
     // and set release status = false
     //
-    //------------------- your code here-----------------------
+    private String projectName;
+    private member[] teamMember = new member[5];
+    private int nTeam = 0;
+    private boolean releaseStatus = false;
     
-    //---------------------------------------------------------
+    
     
     // 2. Declare your Constructor here:
-    // NIM : .........................., 
+    // NIM : 1301154315 
     // NAMA : ........................., 
     //
     //------------------- your code here-----------------------
+    public Project (String projectName) 
+    {
+        this.projectName = projectName;
+    }
     
+    public void addMember(member m)
+    {
+        this.teamMember [nTeam++]=m;
+    }
+    
+    public String toString() {
+        String b ="Project Exodus status is in progress with team member of "+nTeam;
+    }
     //---------------------------------------------------------
     
     

@@ -6,9 +6,15 @@
 package task3exercise2;
 
 /**
+<<<<<<< HEAD
  * NIM 1 : 1301154511 
  * NIM 2 : 1301154315 
  * NIM 3 : 130115
+=======
+ * NIM 1 : 1301154315
+ * NIM 2 : ................ 
+ * NIM 3 : ................
+>>>>>>> origin/master
  *
  */
 public class Driver {
