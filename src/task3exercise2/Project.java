@@ -50,7 +50,7 @@ public class Project {
     //------------------- your code here-----------------------
         public void addMember(Member m) {
             teamMember[nTeam] = m;
-            nTeam++
+            nTeam++;
         }
     //---------------------------------------------------------
     

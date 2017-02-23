@@ -117,7 +117,7 @@ public class StartUp {
     // NAMA : Galih Budiawan, 
     //
     // set release status of object Project p by invoking method releaseApp()
-    //
+    // 
     //------------------- your code here-----------------------
         public void releaseProject(Project p) {
             p.releaseApp();
