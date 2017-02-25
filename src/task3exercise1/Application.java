@@ -61,5 +61,5 @@ public class Application {
     //------------------- your code here-----------------------
         return null;
         
-         return ("Application name : " + getAppName() + " , with size: " + getAppSize());;
+         return ("Application name : " + getAppName() + " , with size: " + getAppSize());
     

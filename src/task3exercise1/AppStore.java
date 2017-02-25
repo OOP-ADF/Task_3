@@ -63,4 +63,4 @@ public class AppStore {
     //------------------- your code here-----------------------
         
            String app = "There are " + totalApp + " application ready to install";
-           return app;
+           return totalApp;
