@@ -1,55 +1,50 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package task3exercise1;
 
+/**
+ *
+ * 
+ */
 public class AppStore {
+    private Application[] appList = new Application[100];
+    private int totalApp;
     
-    // 1. Declare your private attributes here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    //------------------- your code here-----------------------
+  
+
+    public Application[] getAppList() {
+        return appList;
+    }
+
+    public int getTotalApp() {
+        return totalApp;
+    }
     
-    //---------------------------------------------------------
+
     
-    // 2. Declare your Setter and Getter method here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    //
-    //------------------- your code here-----------------------
+    public void createNewApp(String appName, int appSize)
+    {
+        Application app = new Application(appName, appSize);
+        appList[totalApp] = app;
+        totalApp++;
+    }    
     
-    //---------------------------------------------------------
+   
     
+    public Application getApp(int id) 
+    {
+        return appList[id];
+    }
     
-    // 3. Create method createNewApp( appName, appSize ) here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // instantiate new Application object and insert it in array appList
-    //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-    
-    
-    // 4. Create method getApp( id ) : Application here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // returns Application object from array appList with array index = id
-    //
-    //------------------- your code here-----------------------
-    
-    //---------------------------------------------------------
-        
-    
-    // 5. Create method toString() : String here:
-    // NIM : .........................., 
-    // NAMA : ........................., 
-    // @return returns String that contains the number of Application available
-    // 
-    // example : "There are 5 applications ready to install"
-    // 
+
     public String toString() {
-    //------------------- your code here-----------------------
-        return null;
+   
+        String p = "There are " + totalApp + " application ready to install";
+        return p;
     
-    //---------------------------------------------------------
+    
     }
 }
