@@ -2,6 +2,10 @@ package task3exercise1;
 
 public class Application {
 
+    Application() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     // 1. Declare your private attributes here:
     // NIM : .........................., 
     // NAMA : ........................., 
@@ -19,6 +23,14 @@ public class Application {
     //------------------- your code here-----------------------
     
     //---------------------------------------------------------
+
+    Application() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    Application(String appName, int appSize) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     // 3. Declare your Setter and Getter method here:
